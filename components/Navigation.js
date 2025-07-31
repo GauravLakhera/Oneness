@@ -5,12 +5,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { gsap } from "gsap";
 
+// const navItems = [
+//   { href: "/", label: "Home" },
+//   { href: "/about", label: "our expertise" },
+//   { href: "/services", label: "Sectors" },
+//   { href: "/insights", label: "Insights" },
+//   { href: "/approach", label: "Approach" },
+// ];
+
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "our expertise" },
-  { href: "/services", label: "Sectors" },
-  { href: "/insights", label: "Insights" },
-  { href: "/approach", label: "Approach" },
+  { href: "/", label: "our expertise" },
+  { href: "/", label: "Sectors" },
+  { href: "/", label: "Insights" },
+  { href: "/", label: "Approach" },
 ];
 
 export default function Navigation() {
