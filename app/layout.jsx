@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import Navigation from '@/components/Navigation';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+import Footer from "@/components/Footer"
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <main className="relative min-h-screen">
             {children}
           </main>
+          <Footer/>
         </SmoothScrollProvider>
       </body>
     </html>

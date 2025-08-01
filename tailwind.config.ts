@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -62,6 +63,10 @@ const config: Config = {
         },
       },
       keyframes: {
+                scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
         'accordion-down': {
           from: {
             height: '0',
@@ -82,6 +87,7 @@ const config: Config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        scroll: 'scroll 10s linear infinite',
       },
     },
   },

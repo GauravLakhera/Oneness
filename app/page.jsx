@@ -6,6 +6,9 @@ import AnimatedText from "@/components/AnimatedText";
 import FadeInSection from "@/components/FadeInSection";
 import { ChevronRight } from "lucide-react";
 import AnimatedSentence from "@/components/AnimatedSentence";
+import PhaseCards from "@/components/PhaseCards";
+import CollapsibleDetailList from "@/components/CollapsibleDetailList";
+import PartnersCarousel from "@/components/PartnersCarousel";
 
 export default function Home() {
   useEffect(() => {
@@ -44,15 +47,15 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <img
-          src="/images/hero_bg.png"
+          src="/images/hero-bg.jpg"
           alt="hero"
-          className="w-full h-[25rem] grayscale-0 object-cover"
+          className="w-full h-[28rem] lg:h-[25rem] grayscale-0 object-cover"
         />
       </section>
 
       <section className="relative flex flex-col pt-6 items-start ">
-        <div className="max-w-7xl mx-auto w-full">
-          <h1 className="hero-main text-7xl mb-8">
+        <div className="md:max-w-7xl mx-auto w-full px-4 lg:px-0">
+          <h1 className="hero-main text-5xl md:text-7xl mb-8">
             ONENESS
             <br />
             <span className="text-black/70 ">The art of workmenship</span>
@@ -61,8 +64,8 @@ export default function Home() {
           <div className="text-xl section-title mb-3 max-w-2xl">
             Engineering Excellence Through Collaborative Innovation
           </div>
-          <button className="text-xl flex border border-black/60 text-black  px-2 py-3">
-            <span>Book a consultation</span>
+          <button className="text-sm lg:text-xl flex justify-center items-center border border-black/60 text-black  px-2 py-1">
+            <span>BOOK A CONSULTATION</span>
             <ChevronRight size={32} strokeWidth={0.75} />
           </button>
 
@@ -72,11 +75,11 @@ export default function Home() {
             our expertise, infinite possibilities.
           </div> */}
         </div>
-        <div className="absolute -top-12 right-3 transform ">
-          <img src="/images/logo.png" className="w-[16rem] "></img>
-          <h1 className="font-medium text-black/80">
+        <div className="absolute -top-12 right-5 lg:right-10 transform ">
+          <img src="/images/logo.png" className=" w-[8rem] md:w-[16rem] "></img>
+          {/* <h1 className="font-medium text-black/80">
             Innovate. Design. Build. Excellence
-          </h1>
+          </h1> */}
         </div>
 
         {/* Scroll Indicator */}
@@ -85,15 +88,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 relative">
-        <div className="max-w-7xl mx-auto w-full py-28">
-          <AnimatedText className="w-8/12 text-6xl " splitType="words">
-            Kreisson is a forward-thinking construction and engineering law firm
-            based in Sydney, providing comprehensive legal and technical support
-            to clients across Australia and the world.
+      <section className="lg:py-16 py-0 px-4 lg:px-0 relative">
+        <div className="md:max-w-7xl mx-auto w-full py-10 lg:py-28">
+          <AnimatedText className="md:w-8/12 text-4xl lg:text-6xl leading-[3rem] " splitType="words">
+            ONENESS is a progressive civil engineering, architecture, and
+            interior design firm based in Bengaluru, delivering innovative
+            technical solutions to clients across India.
           </AnimatedText>
         </div>
-        <div className="absolute  right-3 w-5/12 text-xl text-black/80">
+        <div className="absolute w-11/12 my-10 right-3 md:w-5/12 text-xl text-black/80">
           <h1 className="mb-10">
             Over the past eight years, we have contributed to the success of
             diverse industries and witnessed significant growth and
@@ -112,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-28 pb-5">
+      <section className="pt-[16rem] lg:pt-28 pb-5">
         <AnimatedSentence text="Innovate. Design. Build. Excellence." />
       </section>
 
@@ -121,117 +124,171 @@ export default function Home() {
       {/* Our Expertise/ */}
       <section className="py-5 w-11/12 mx-auto">
         <div>
-          <h1 className="text-7xl text-right ">Our Expertise/</h1>
+          <h1 className="text-4xl lg:text-7xl text-right ">Our Expertise/</h1>
         </div>
-        <p className="text-5xl pt-14 w-8/12">
+        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem]" splitType="words">
           Our multidisciplinary team delivers superior results at every phase of
           your project’s lifecycle. Leveraging extensive experience across civil
           engineering, architecture, and design sectors, we proactively identify
           and manage technical and commercial risks to safeguard, optimize, and
           grow your assets and opportunities.
-        </p>
+        </AnimatedText>
+
+        <PhaseCards />
       </section>
 
-      {/* Vision Statement */}
-      <section className="py-32 section-padding">
-        <div className="max-w-7xl mx-auto">
-          <FadeInSection className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <AnimatedText className="section-title mb-8" splitType="words">
-                Precision in Every Detail
-              </AnimatedText>
-              <AnimatedText
-                className="body-text opacity-80"
-                splitType="lines"
-                delay={0.3}
-              >
-                We believe in the power of meticulous engineering. Every line of
-                code, every structural calculation, every design decision is
-                crafted with absolute precision and thoughtful consideration.
-              </AnimatedText>
-            </div>
-            <div className="border border-black p-12 aspect-square flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl font-light mb-4">∞</div>
-                <div className="text-sm tracking-widest uppercase">
-                  Infinite Potential
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
+      {/* sector we work in  */}
+      <div className=" w-11/12 md:w-10/12 mx-auto">
+        <img src="/images/home2.jpg" className="grayscale"></img>
+      </div>
 
-      {/* Core Values Preview */}
-      <section className="py-32 section-padding bg-black text-white">
-        <div className="max-w-7xl mx-auto">
-          <FadeInSection className="text-center mb-20">
-            <AnimatedText className="section-title mb-8" splitType="words">
-              Our Foundation
-            </AnimatedText>
-          </FadeInSection>
-
-          <div className="grid md:grid-cols-3 gap-16">
-            <FadeInSection delay={0.2}>
-              <div className="text-center">
-                <div className="text-2xl font-light mb-6">01</div>
-                <h3 className="text-xl font-light mb-4 tracking-wide">
-                  COLLABORATION
-                </h3>
-                <p className="body-text opacity-80">
-                  Partnership drives innovation. We work alongside you to
-                  transform ideas into reality.
-                </p>
-              </div>
-            </FadeInSection>
-
-            <FadeInSection delay={0.4}>
-              <div className="text-center">
-                <div className="text-2xl font-light mb-6">02</div>
-                <h3 className="text-xl font-light mb-4 tracking-wide">
-                  CLARITY
-                </h3>
-                <p className="body-text opacity-80">
-                  Clear communication and transparent processes ensure perfect
-                  alignment with your goals.
-                </p>
-              </div>
-            </FadeInSection>
-
-            <FadeInSection delay={0.6}>
-              <div className="text-center">
-                <div className="text-2xl font-light mb-6">03</div>
-                <h3 className="text-xl font-light mb-4 tracking-wide">
-                  EXCELLENCE
-                </h3>
-                <p className="body-text opacity-80">
-                  We pursue perfection in every project, delivering solutions
-                  that exceed expectations.
-                </p>
-              </div>
-            </FadeInSection>
+      <div>
+        <div className="relative w-11/12 md:w-10/12 mx-auto pt-10 pb-[15rem]">
+          <h1 className="md:text-7xl text-4xl w-8/12 md:w-4/12">Sectors we work in/</h1>
+          <div className="absolute right-10 md:w-6/12">
+            <p className="md:text-xl text-black/80 py-10 ">
+              ONENESS partners with clients across a diverse spectrum of
+              construction, infrastructure, and design projects, enabling them
+              to navigate complex technical challenges while minimizing risk.
+              Our unrivaled expertise, combined with a collaborative mindset,
+              ensures every client receives tailored, end-to-end support and
+              innovative solutions for optimal project outcomes
+            </p>
           </div>
         </div>
+        <hr className="hidden lg:block w-10/12 mx-auto"></hr>
+        <CollapsibleDetailList />
+      </div>
+
+      {/* Tweenty year  */}
+
+      <section className="flex mt-16 lg:mt-0 flex-col lg:flex-row bg-[#33312f] min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+        <div className="flex flex-col gap-10 lg:max-w-[50%]">
+          <div className=" mb-2 lg:mb-8 text-[#efe0b1] ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="a"
+              x="0"
+              y="0"
+              height={100}
+              width={100}
+              viewBox="0 0 80 80"
+              className="-rotate-90 text-white"
+              xmlSpace="preserve"
+            >
+              <g>
+                <polygon
+                  points="62.6,67.5 12.4,67.5 12.4,17.2 13.6,17.2 13.6,66.2 62.6,66.2"
+                  fill="currentColor"
+                />
+              </g>
+              <g>
+                <rect
+                  x="2.2"
+                  y="39.3"
+                  transform="matrix(0.7075 -0.7067 0.7067 0.7075 -16.5202 40.0866)"
+                  width="75.9"
+                  height="1.3"
+                  fill="currentColor"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <p className="text-white/80 text-base md:max-w-xl leading-relaxed">
+            Oneness is celebrating 20 years of serving India's construction and
+            engineering industry. Over two decades, we have built a reputation
+            for delivering sharp legal insight, commercial clarity and strategic
+            depth across some of the country’s most complex projects. With a
+            team known for its technical excellence, we’re proud to say–very few
+            do what Kreisson does.
+          </p>
+          <div className="font-bold hidden lg:block md:text-[8rem] text-right tracking-wider text-white">
+            TWENTY
+          </div>
+        </div>
+        <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
+          <img
+            src="/images/year.jpg"
+            alt="Businessman in shadow"
+            className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
+          />
+          <div className="block lg:hidden font-bold text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
+            TWENTY
+          </div>
+          <div className=" font-bold text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
+            YEARS
+          </div>
+          <button className="mt-8 border border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+            Our team &rarr;
+          </button>
+        </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-32 section-padding">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInSection>
-            <AnimatedText className="hero-text mb-12" splitType="words">
-              Ready to Build
-              <br />
-              Something Extraordinary?
-            </AnimatedText>
-            <div className="border border-black inline-block">
-              <a
-                href="/contact"
-                className="block px-12 py-6 text-sm tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-300"
-              >
-                Start Your Project
-              </a>
+      {/* Our Memberships/ section */}
+      <section className="">
+        <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] lg:pt-[10rem]">
+          <h1 className="md:text-7xl text-4xl text-left "> Our Memberships/</h1>
+
+          <div className=" lg:w-4/12 mt-10">
+            <p>
+              Our staff are actively involved with a range of peak industry
+              bodies, connecting with their peers, drawing on educational
+              resources and accessing up-to-date information on industry
+              developments.
+            </p>
+          </div>
+        </div>
+
+        <div className="pt-10">
+          <hr></hr>
+          <PartnersCarousel />
+          <hr></hr>
+          <div className="flex relative flex-col py-5 lg:flex-row justify-between">
+            <div className="lg:w-5/12">
+              <img
+                src="https://kreisson.com.au/wp-content/uploads/2025/03/image-23-copy-2.webp"
+                className="object-cover grayscale h-[20rem]"
+              ></img>
             </div>
-          </FadeInSection>
+            <div className=" absolute lg:relative right-0 top-5 flex flex-col items-end justify-center pr-16 space-y-3 lg:space-y-2">
+              <div className=" mb-8 text-[#efe0b1] ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="a"
+                  x="0"
+                  y="0"
+                  height={50}
+                  width={50}
+                  viewBox="0 0 80 80"
+                  className=" text-black"
+                  xmlSpace="preserve"
+                >
+                  <g>
+                    <polygon
+                      points="62.6,67.5 12.4,67.5 12.4,17.2 13.6,17.2 13.6,66.2 62.6,66.2"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <g>
+                    <rect
+                      x="2.2"
+                      y="39.3"
+                      transform="matrix(0.7075 -0.7067 0.7067 0.7075 -16.5202 40.0866)"
+                      width="75.9"
+                      height="1.3"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h1 className="text-end">Protect Your Project </h1>
+              <h1 className="md:text-[8rem] text-6xl ">CONTACT US</h1>
+              <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+                <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>

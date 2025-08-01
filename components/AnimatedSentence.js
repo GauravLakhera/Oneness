@@ -41,7 +41,7 @@ const AnimatedSentence = ({ text }) => {
 <div style={{ position: 'relative', overflow: 'hidden', width: '100%' }}>
   <div
     ref={sentenceRef}
-    className="whitespace-nowrap text-[8rem] py-4 font-semibold text-black block leading-none"
+    className="whitespace-nowrap text-5xl md:text-[8rem] py-4 font-semibold text-black block leading-none"
     style={{ width: 'max-content' }}
   >
     {text}
