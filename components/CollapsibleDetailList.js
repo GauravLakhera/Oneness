@@ -126,7 +126,7 @@ export default function CollapsibleDetailList() {
             >
               <div className="flex flex-col lg:flex-row justify-between flex-1 ">
                 <div className=" lg:max-w-[30rem]">
-                  <p className="lg:text-5xl text-3xl   font-thin text-black/80">
+                  <p className="lg:text-5xl text-2xl   font-thin text-black/80">
                     {item.title}
                   </p>
                 </div>

@@ -90,7 +90,7 @@ export default function Home() {
 
       <section className="lg:py-16 py-0 px-4 lg:px-0 relative">
         <div className="md:max-w-7xl mx-auto w-full py-10 lg:py-28">
-          <AnimatedText className="md:w-8/12 text-4xl lg:text-6xl leading-[3rem] " splitType="words">
+          <AnimatedText className="md:w-8/12 text-3xl lg:text-6xl leading-[3rem] " splitType="words">
             ONENESS is a progressive civil engineering, architecture, and
             interior design firm based in Bengaluru, delivering innovative
             technical solutions to clients across India.
@@ -124,9 +124,9 @@ export default function Home() {
       {/* Our Expertise/ */}
       <section className="py-5 w-11/12 mx-auto">
         <div>
-          <h1 className="text-4xl lg:text-7xl text-right ">Our Expertise/</h1>
+          <h1 className="text-4xl lg:text-7xl font-medium text-right ">Our Expertise/</h1>
         </div>
-        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem]" splitType="words">
+        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem] " splitType="words">
           Our multidisciplinary team delivers superior results at every phase of
           your project’s lifecycle. Leveraging extensive experience across civil
           engineering, architecture, and design sectors, we proactively identify
@@ -144,7 +144,7 @@ export default function Home() {
 
       <div>
         <div className="relative w-11/12 md:w-10/12 mx-auto pt-10 pb-[15rem]">
-          <h1 className="md:text-7xl text-4xl w-8/12 md:w-4/12">Sectors we work in/</h1>
+          <h1 className="text-4xl lg:text-7xl font-medium w-8/12 md:w-4/12">Sectors we work in/</h1>
           <div className="absolute right-10 md:w-6/12">
             <p className="md:text-xl text-black/80 py-10 ">
               ONENESS partners with clients across a diverse spectrum of
@@ -213,10 +213,10 @@ export default function Home() {
             alt="Businessman in shadow"
             className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
           />
-          <div className="block lg:hidden font-bold text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
+          <div className="block lg:hidden font-semibold text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
             TWENTY
           </div>
-          <div className=" font-bold text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
+          <div className=" font-semibold text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
             YEARS
           </div>
           <button className="mt-8 border border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
@@ -228,7 +228,7 @@ export default function Home() {
       {/* Our Memberships/ section */}
       <section className="">
         <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] lg:pt-[10rem]">
-          <h1 className="md:text-7xl text-4xl text-left "> Our Memberships/</h1>
+          <h1 className="text-4xl lg:text-7xl font-medium text-left "> Our Memberships/</h1>
 
           <div className=" lg:w-4/12 mt-10">
             <p>
