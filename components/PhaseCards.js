@@ -318,7 +318,7 @@ export default function PhaseCards() {
             className="bg-white p-8  text-center "
           >
             {" "}
-            <div className="text-5xl text-black mb-2 font-medium text-start border-b border-black/80">{`0${
+            <div className="text-5xl text-yellow-700/80 mb-2 font-medium text-start border-b border-black/80">{`0${
               idx + 1
             }.`}</div>
             <div className="border-r border-black/80">

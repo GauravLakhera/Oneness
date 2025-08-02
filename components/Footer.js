@@ -34,13 +34,13 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-[#161619] text-white w-full pt-10 pb-6 px-6">
+    <footer className="bg-[#656565] text-white w-full pt-10 pb-6 px-6">
       <div className="w-11/12 mx-auto">
         {/* Newsletter */}
         <div className="mb-10">
           <div className="flex justify-between items-center">
             <div>
-            <span className="text-xs text-gray-400 tracking-widest">
+            <span className="text-xs text-gray-100 tracking-widest">
               NEWSLETTER
             </span>
             <h2 className="mt-2 text-2xl md:text-3xl leading-snug font-light">
@@ -58,7 +58,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="flex-1 rounded-none bg-[#161619]  border-b border-[#404044] px-4 py-2 text-white placeholder-gray-500 focus:outline-none"
+                className="flex-1 rounded-none bg-[#656565]  border-b border-[#404044] px-4 py-2 text-white placeholder-gray-200 focus:outline-none"
               />
               <button
                 type="submit"
@@ -96,14 +96,14 @@ export default function Footer() {
           <div
             key={i}
             ref={(el) => (lineRefs.current[i] = el)}
-            className="w-full h-[1px] bg-[#404044] my-8 origin-left scale-x-0"
+            className="w-full h-[1px] bg-[#e3e3e3] my-8 origin-left scale-x-0"
           />
         ))}
 
         {/* Nav Links */}
 
         {/* Info Section */}
-        <div className="text-gray-400 flex flex-col gap-1 text-sm mb-7">
+        <div className="text-gray-100 flex flex-col gap-1 text-sm mb-7">
           <span>
           Bangalore , Karnataka &nbsp;&nbsp;
             <span className="text-white">|</span>&nbsp;&nbsp;
@@ -124,7 +124,7 @@ export default function Footer() {
         />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between pt-4 text-gray-500 text-sm gap-3">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between pt-4 text-gray-100 text-sm gap-3">
           <small>Copyright © 2025 Oniness. All rights reserved.</small>
           {/* <div className="flex gap-4">
             <span>Web design by RankMantra.</span>
