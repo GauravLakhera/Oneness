@@ -9,7 +9,7 @@ import { ChevronRight } from "lucide-react";
 const navItems = [
   { href: "/about", label: "our expertise" },
   { href: "/services", label: "Sectors", hasDropdown: true },
-  { href: "/", label: "Insights" },
+  { href: "/insights", label: "Insights" },
   { href: "/", label: "Approach" },
 ];
 
