@@ -55,8 +55,8 @@ export default function Home() {
 
       <section className="relative flex flex-col pt-6 items-start ">
         <div className="md:max-w-7xl mx-auto w-full px-4 lg:px-0">
-          <h1 className="hero-main text-5xl md:text-7xl mb-8 text-black/80">
-            ONENESS
+          <h1 className="hero-main text-5xl md:text-7xl w-6/12 mb-8 text-black/80">
+            CONSTRUCTION & ENGINEERING
             <br />
             {/* <span className="text-black/70 ">The art of workmenship</span> */}
           </h1>
@@ -77,8 +77,8 @@ export default function Home() {
         </div>
         <div className="absolute  right-5 lg:right-10 transform ">
           {/* <img src="/images/logo.png" className=" w-[8rem] md:w-[16rem] "></img> */}
-          <h1 className="text-2xl text-black/80 uppercase">
-           Since- 2007
+          <h1 className="lg:text-2xl text-lg text-black/80 uppercase">
+           Since- 2017
           </h1>
         </div>
 
@@ -197,7 +197,7 @@ export default function Home() {
 
           <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
             Oneness is celebrating 8 years of serving India's construction and
-            engineering industry. Over two decades, we have built a reputation
+            engineering industry. we have built a reputation
             for delivering sharp legal insight, commercial clarity and strategic
             depth across some of the country’s most complex projects. With a
             team known for its technical excellence, we’re proud to say–very few
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-10">
+        <div className="py-10">
           <hr className="text-yellow-600"></hr>
           <PartnersCarousel />
            <hr className="text-yellow-600"></hr>
