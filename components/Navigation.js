@@ -17,7 +17,7 @@ const navItems = [
  
   { href: "/about", label: "our expertise" },
   { href: "/", label: "Sectors" },
-  { href: "/", label: "Insights" },
+  { href: "/insights", label: "Insights" },
   { href: "/", label: "Approach" },
 ];
 
