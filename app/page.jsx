@@ -240,7 +240,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-10">
+        <div className="py-10">
           <hr className="text-yellow-600"></hr>
           <PartnersCarousel />
            <hr className="text-yellow-600"></hr>
