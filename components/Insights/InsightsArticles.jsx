@@ -126,23 +126,48 @@ const InsightsArticles = () => {
     <section className="bg-black/80 py-12 px-4 md:px-10 text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         {/* Sidebar */}
-        <aside className="w-full md:w-1/4 space-y-10 border-r border-white">
-          <h2 className="text-4xl font-[300] mb-4">Categories</h2>
-          {categories.map((category, index) => (
-            <label
-              key={index}
-              className="flex items-center space-x-2 mt-6 cursor-pointer"
-            >
-              <input
-                type="checkbox"
-                className="form-checkbox h-4 w-4 text-yellow-400"
-                checked={selectedCategories.includes(category)}
-                onChange={() => handleCategoryChange(category)}
-              />
-              <span className="text-sm">{category}</span>
-            </label>
-          ))}
-        </aside>
+      <aside className="w-full md:w-1/4 space-y-10 border-r border-white">
+  <h2 className="text-4xl font-[300] mb-4 hidden md:block">Categories</h2>
+
+  {/* ✅ Mobile Dropdown */}
+  <div className="md:hidden mb-6">
+    <select
+      className="w-full p-3 bg-white text-black"
+      onChange={(e) =>
+        setSelectedCategories(
+          e.target.value ? [e.target.value] : []
+        )
+      }
+      value={selectedCategories[0] || ""}
+    >
+      <option value="">All Categories</option>
+      {categories.map((category, index) => (
+        <option key={index} value={category}>
+          {category}
+        </option>
+      ))}
+    </select>
+  </div>
+
+  {/* ✅ Desktop Checkboxes */}
+  <div className="hidden md:block">
+    {categories.map((category, index) => (
+      <label
+        key={index}
+        className="flex items-center space-x-2 mt-6 cursor-pointer"
+      >
+        <input
+          type="checkbox"
+          className="form-checkbox h-4 w-4 text-yellow-400"
+          checked={selectedCategories.includes(category)}
+          onChange={() => handleCategoryChange(category)}
+        />
+        <span className="text-sm">{category}</span>
+      </label>
+    ))}
+  </div>
+</aside>
+
 
         {/* Articles */}
         <div className="w-full md:w-3/4">
