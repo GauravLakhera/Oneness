@@ -105,11 +105,10 @@ export default function Footer() {
         {/* Info Section */}
         <div className="text-gray-400 flex flex-col gap-1 text-sm mb-7">
           <span>
-            234, Rao and Rao Residency chinnapa colony near bharathgas godwon
-            vijinapura dooravani nagar, Bangalore-560016 &nbsp;&nbsp;
+          Bangalore , Karnataka &nbsp;&nbsp;
             <span className="text-white">|</span>&nbsp;&nbsp;
             info@onenessitech.com &nbsp;&nbsp;
-            <span className="text-white">|</span>&nbsp;&nbsp; +91 9066597303
+            <span className="text-white">|</span>&nbsp;&nbsp; +91 6364538472
           </span>
           <div className="flex gap-7 mt-2">
             <a className="hover:underline cursor-pointer">LinkedIn</a>
@@ -127,10 +126,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between pt-4 text-gray-500 text-sm gap-3">
           <small>Copyright © 2025 Oniness. All rights reserved.</small>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <span>Web design by RankMantra.</span>
             <span>Privacy Policy</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

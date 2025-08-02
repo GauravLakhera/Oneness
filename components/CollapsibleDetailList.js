@@ -19,35 +19,35 @@ const ITEMS = [
     detail:
       "Our team addresses complex infrastructure needs—providing strategy, lifecycle support, and proactive resolution for seamless project execution.",
   },
-  {
-    title: "REPAIR & MAINTENANCE",
-    summary:
-      "Tailored advice and peerless expertise to protect your interests and enhance your objectives within the complex engineering project landscape.",
-    detail:
-      "From design review to compliance guidance and technical innovation, we partner with you to deliver sustainable, high-value engineering results.",
-  },
+  // {
+  //   title: "REPAIR & MAINTENANCE",
+  //   summary:
+  //     "Tailored advice and peerless expertise to protect your interests and enhance your objectives within the complex engineering project landscape.",
+  //   detail:
+  //     "From design review to compliance guidance and technical innovation, we partner with you to deliver sustainable, high-value engineering results.",
+  // },
   // Added new items below:
-  {
-    title: "AMC PROJECT",
-    summary:
-      "Providing comprehensive Annual Maintenance Contract services for long-term project reliability and client satisfaction.",
-    detail:
-      "Our AMC services ensure ongoing maintenance, timely repairs, and minimization of downtime to keep your projects running smoothly and efficiently.",
-  },
-  {
-    title: "ARCHITECTURE",
-    summary:
-      "Innovative architectural design services that blend creativity with practicality to meet client vision and regulatory requirements.",
-    detail:
-      "We deliver end-to-end architectural solutions, from conceptual design through detailed planning and execution, enhancing both aesthetics and function.",
-  },
-  {
-    title: "ELECTRICAL",
-    summary:
-      "Expert electrical engineering services ensuring safety, compliance, and energy efficiency across a range of projects.",
-    detail:
-      "Our electrical team handles design, installation, and maintenance for residential, commercial, and industrial electrical systems.",
-  },
+  // {
+  //   title: "AMC PROJECT",
+  //   summary:
+  //     "Providing comprehensive Annual Maintenance Contract services for long-term project reliability and client satisfaction.",
+  //   detail:
+  //     "Our AMC services ensure ongoing maintenance, timely repairs, and minimization of downtime to keep your projects running smoothly and efficiently.",
+  // },
+  // {
+  //   title: "ARCHITECTURE",
+  //   summary:
+  //     "Innovative architectural design services that blend creativity with practicality to meet client vision and regulatory requirements.",
+  //   detail:
+  //     "We deliver end-to-end architectural solutions, from conceptual design through detailed planning and execution, enhancing both aesthetics and function.",
+  // },
+  // {
+  //   title: "ELECTRICAL",
+  //   summary:
+  //     "Expert electrical engineering services ensuring safety, compliance, and energy efficiency across a range of projects.",
+  //   detail:
+  //     "Our electrical team handles design, installation, and maintenance for residential, commercial, and industrial electrical systems.",
+  // },
   {
     title: "INTERIOR DESIGN",
     summary:
@@ -62,13 +62,13 @@ const ITEMS = [
     detail:
       "We manage the safe and efficient erection of HT & LT line works, ensuring compliance with industry standards and operational excellence.",
   },
-  {
-    title: "PWD SUB WORKS",
-    summary:
-      "Reliable Public Works Department subcontracting services delivering projects with quality and adherence to schedules.",
-    detail:
-      "Our PWD subcontract works cover a wide array of civil and infrastructure projects, backed by thorough management and technical expertise.",
-  },
+  // {
+  //   title: "PWD SUB WORKS",
+  //   summary:
+  //     "Reliable Public Works Department subcontracting services delivering projects with quality and adherence to schedules.",
+  //   detail:
+  //     "Our PWD subcontract works cover a wide array of civil and infrastructure projects, backed by thorough management and technical expertise.",
+  // },
 ];
 
 export default function CollapsibleDetailList() {
@@ -117,7 +117,7 @@ export default function CollapsibleDetailList() {
 
   return (
     <section className="bg-white text-black py-10">
-      <div className="lg:max-w-[85rem] mx-auto divide-y divide-gray-500">
+      <div className="lg:max-w-[85rem] mx-auto divide-y divide-yellow-600">
         {ITEMS.map((item, idx) => (
           <div key={item.title} ref={(el) => (cardsRef.current[idx] = el)}>
             <div
@@ -126,7 +126,7 @@ export default function CollapsibleDetailList() {
             >
               <div className="flex flex-col lg:flex-row justify-between flex-1 ">
                 <div className=" lg:max-w-[30rem]">
-                  <p className="lg:text-5xl text-2xl   font-thin text-black/80">
+                  <p className="lg:text-5xl text-2xl   font-sentient text-black/70">
                     {item.title}
                   </p>
                 </div>

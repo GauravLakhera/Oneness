@@ -14,8 +14,8 @@ import { gsap } from "gsap";
 // ];
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/", label: "our expertise" },
+ 
+  { href: "/about", label: "our expertise" },
   { href: "/", label: "Sectors" },
   { href: "/", label: "Insights" },
   { href: "/", label: "Approach" },
@@ -43,9 +43,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="nav-item">
-            <span className="text-xl font-light tracking-widest">
-              ONENESS 
-            </span>
+              <img src="/images/logo.png" className=" w-[5rem] "></img>
           </Link>
 
           {/* Desktop Navigation */}

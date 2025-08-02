@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sentient': ['Sentient', 'Arial', 'sans-serif'],
+      },
 
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -55,16 +55,16 @@ export default function Home() {
 
       <section className="relative flex flex-col pt-6 items-start ">
         <div className="md:max-w-7xl mx-auto w-full px-4 lg:px-0">
-          <h1 className="hero-main text-5xl md:text-7xl mb-8">
+          <h1 className="hero-main text-5xl md:text-7xl mb-8 text-black/80">
             ONENESS
             <br />
-            <span className="text-black/70 ">The art of workmenship</span>
+            {/* <span className="text-black/70 ">The art of workmenship</span> */}
           </h1>
 
           <div className="text-xl section-title mb-3 max-w-2xl">
             Engineering Excellence Through Collaborative Innovation
           </div>
-          <button className="text-sm lg:text-xl flex justify-center items-center border border-black/60 text-black  px-2 py-1">
+          <button className="text-sm lg:text-lg flex justify-center items-center border border-black/60 text-black/70  px-2 py-1">
             <span>BOOK A CONSULTATION</span>
             <ChevronRight size={32} strokeWidth={0.75} />
           </button>
@@ -75,11 +75,11 @@ export default function Home() {
             our expertise, infinite possibilities.
           </div> */}
         </div>
-        <div className="absolute -top-12 right-5 lg:right-10 transform ">
-          <img src="/images/logo.png" className=" w-[8rem] md:w-[16rem] "></img>
-          {/* <h1 className="font-medium text-black/80">
-            Innovate. Design. Build. Excellence
-          </h1> */}
+        <div className="absolute  right-5 lg:right-10 transform ">
+          {/* <img src="/images/logo.png" className=" w-[8rem] md:w-[16rem] "></img> */}
+          <h1 className="text-2xl text-black/80 uppercase">
+           Since- 2007
+          </h1>
         </div>
 
         {/* Scroll Indicator */}
@@ -90,7 +90,7 @@ export default function Home() {
 
       <section className="lg:py-16 py-0 px-4 lg:px-0 relative">
         <div className="md:max-w-7xl mx-auto w-full py-10 lg:py-28">
-          <AnimatedText className="md:w-8/12 text-3xl lg:text-6xl leading-[3rem] " splitType="words">
+          <AnimatedText className="md:w-8/12 text-3xl lg:text-6xl leading-[3rem] font-sentient text-black/80" splitType="words">
             ONENESS is a progressive civil engineering, architecture, and
             interior design firm based in Bengaluru, delivering innovative
             technical solutions to clients across India.
@@ -103,11 +103,11 @@ export default function Home() {
             transformation.{" "}
           </h1>
           <div className="flex mt-4 gap-6">
-            <button className="text-sm flex border items-center border-black/60 text-black  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500">
+            <button className="text-sm flex border items-center border-yellow-700/60 text-black  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500">
               <span>OUR TEAM</span>
               <ChevronRight size={32} strokeWidth={0.75} />
             </button>
-            <button className="text-sm flex border items-center border-black/60 text-black  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500">
+            <button className="text-sm flex border items-center border-yellow-700/60 text-black  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500">
               <span>OUR EXPERTISE</span>
               <ChevronRight size={32} strokeWidth={0.75} />
             </button>
@@ -115,18 +115,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-[16rem] lg:pt-28 pb-5">
+      <section className="pt-[16rem] lg:pt-32 pb-5">
         <AnimatedSentence text="Innovate. Design. Build. Excellence." />
       </section>
 
-      <hr></hr>
+      <hr className="text-yellow-700"></hr>
 
       {/* Our Expertise/ */}
       <section className="py-5 w-11/12 mx-auto">
         <div>
-          <h1 className="text-4xl lg:text-7xl font-medium text-right ">Our Expertise/</h1>
+          <h1 className="text-4xl lg:text-7xl  text-right text-black/80">Our Expertise/</h1>
         </div>
-        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem] " splitType="words">
+        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem] font-sentient text-black/80" splitType="words">
           Our multidisciplinary team delivers superior results at every phase of
           your project’s lifecycle. Leveraging extensive experience across civil
           engineering, architecture, and design sectors, we proactively identify
@@ -144,9 +144,9 @@ export default function Home() {
 
       <div>
         <div className="relative w-11/12 md:w-10/12 mx-auto pt-10 pb-[15rem]">
-          <h1 className="text-4xl lg:text-7xl font-medium w-8/12 md:w-4/12">Sectors we work in/</h1>
+          <h1 className="text-4xl lg:text-7xl w-8/12 md:w-4/12 text-black/80">Sectors we work in/</h1>
           <div className="absolute right-10 md:w-6/12">
-            <p className="md:text-xl text-black/80 py-10 ">
+            <p className="md:text-xl text-black/80 py-10 font-sentient">
               ONENESS partners with clients across a diverse spectrum of
               construction, infrastructure, and design projects, enabling them
               to navigate complex technical challenges while minimizing risk.
@@ -195,16 +195,16 @@ export default function Home() {
             </svg>
           </div>
 
-          <p className="text-white/80 text-base md:max-w-xl leading-relaxed">
-            Oneness is celebrating 20 years of serving India's construction and
+          <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
+            Oneness is celebrating 8 years of serving India's construction and
             engineering industry. Over two decades, we have built a reputation
             for delivering sharp legal insight, commercial clarity and strategic
             depth across some of the country’s most complex projects. With a
             team known for its technical excellence, we’re proud to say–very few
             do what Kreisson does.
           </p>
-          <div className="font-bold hidden lg:block md:text-[8rem] text-right tracking-wider text-white">
-            TWENTY
+          <div className="font-medium hidden lg:block md:text-[8rem] text-right tracking-wider text-white font-sentient">
+            EIGHT
           </div>
         </div>
         <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
@@ -213,10 +213,10 @@ export default function Home() {
             alt="Businessman in shadow"
             className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
           />
-          <div className="block lg:hidden font-semibold text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
-            TWENTY
+          <div className="block lg:hidden font-medium font-sentient text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
+            EIGHT
           </div>
-          <div className=" font-semibold text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
+          <div className=" font-medium font-sentient text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
             YEARS
           </div>
           <button className="mt-8 border border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
@@ -228,7 +228,7 @@ export default function Home() {
       {/* Our Memberships/ section */}
       <section className="">
         <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] lg:pt-[10rem]">
-          <h1 className="text-4xl lg:text-7xl font-medium text-left "> Our Memberships/</h1>
+          <h1 className="text-4xl lg:text-7xl  text-left text-black/80 font-sentient "> Our Memberships/</h1>
 
           <div className=" lg:w-4/12 mt-10">
             <p>
@@ -241,9 +241,9 @@ export default function Home() {
         </div>
 
         <div className="pt-10">
-          <hr></hr>
+          <hr className="text-yellow-600"></hr>
           <PartnersCarousel />
-          <hr></hr>
+           <hr className="text-yellow-600"></hr>
           <div className="flex relative flex-col py-5 lg:flex-row justify-between">
             <div className="lg:w-5/12">
               <img
@@ -283,7 +283,7 @@ export default function Home() {
                 </svg>
               </div>
               <h1 className="text-end">Protect Your Project </h1>
-              <h1 className="md:text-[8rem] text-6xl ">CONTACT US</h1>
+              <h1 className="md:text-[8rem] text-6xl text-end ">CONTACT US</h1>
               <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
                 <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
               </button>
