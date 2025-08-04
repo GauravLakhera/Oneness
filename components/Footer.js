@@ -4,7 +4,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function Footer() {
   const lineRefs = useRef([]);
@@ -40,13 +42,13 @@ export default function Footer() {
         <div className="mb-10">
           <div className="flex justify-between items-center">
             <div>
-            <span className="text-xs text-gray-100 tracking-widest">
-              NEWSLETTER
-            </span>
-            <h2 className="mt-2 text-2xl md:text-3xl leading-snug font-light">
-              Stay up to date with the latest news from{" "}
-              <br className="hidden md:block" /> Oneness
-            </h2>
+              <span className="text-xs text-gray-100 tracking-widest">
+                NEWSLETTER
+              </span>
+              <h2 className="mt-2 text-2xl md:text-3xl leading-snug font-light">
+                Stay up to date with the latest news from{" "}
+                <br className="hidden md:block" /> Oneness
+              </h2>
             </div>
 
             <div className="w-2/12">
@@ -105,7 +107,7 @@ export default function Footer() {
         {/* Info Section */}
         <div className="text-gray-100 flex flex-col gap-1 text-sm mb-7">
           <span>
-          Bangalore , Karnataka &nbsp;&nbsp;
+            Bangalore , Karnataka &nbsp;&nbsp;
             <span className="text-white">|</span>&nbsp;&nbsp;
             info@onenessitech.com &nbsp;&nbsp;
             <span className="text-white">|</span>&nbsp;&nbsp; +91 6364538472
