@@ -23,7 +23,7 @@ export default function Approach() {
           <p className="text-[100px] md:mb-0 md:mt-0 mb-[-50px] mt-[-30px]">”</p>
         </div>
         <div className="w-full md:w-[70%]">
-          <h1 className="text-black/80 text-2xl md:text-5xl md:leading-4  font-[300]">
+          <h1 className="text-black/80 text-2xl md:text-5xl   font-[300]">
             You work to unique requirements. We offer unique solutions. Our legal team collaborates with key stakeholders across your organisation to ensure all guidance is considered, commercial and strategic.
           </h1>
           <p className="text-black/80 text-lg mt-5  md:text-1xl leading-4  font-[300]">David Glinatsis</p>
