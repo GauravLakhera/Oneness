@@ -118,9 +118,10 @@ const serviceDetails = [
 ];
 
 export default function Services() {
-  gsap.set(".text1", { x: -100 });
+
 
   useEffect(() => {
+      gsap.set(".text1", { x: -100 });
     gsap.fromTo(
       ".page-hero",
       { y: 60, opacity: 0 },
