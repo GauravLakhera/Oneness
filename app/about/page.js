@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -14,10 +14,8 @@ if (typeof window !== "undefined" && gsap && ScrollTrigger) {
 }
 
 export default function About() {
-
-
   useEffect(() => {
-      gsap.set(".text1", { x: -100 });
+    gsap.set(".text1", { x: -100 });
     gsap.fromTo(
       ".page-hero",
       { y: 60, opacity: 0 },
@@ -271,7 +269,7 @@ export default function About() {
       <section>
         <ProjectPhases />
       </section>
-      <div className="lg:text-[8rem] text-5xl flex flex-col justify-center items-center ">
+      <div className="lg:text-[8rem] text-5xl flex flex-col justify-center items-center pb-5 ">
         <h1 className="text1">From Contract</h1>
         <h1 className="text2">To Completion</h1>
       </div>
