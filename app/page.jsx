@@ -78,10 +78,10 @@ export default function Home() {
         <div className="absolute -top-24 flex flex-col justify-end items-end right-0 lg:right-10 transform ">
           <img src="/images/Since2017.png" className=" w-[8rem] md:w-[14rem] "></img>
           <h1 className=" hidden lg:block text-lg text-black/80 uppercase text-start w-full">
-           Practical Advice.
+            Practical Advice.
           </h1>
-           <h1 className=" hidden lg:block text-lg text-black/80 uppercase">
-           Commercial Outcomes.
+          <h1 className=" hidden lg:block text-lg text-black/80 uppercase">
+            Commercial Outcomes.
           </h1>
         </div>
 
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="py-10">
           <hr className="text-yellow-600"></hr>
           <PartnersCarousel />
-           <hr className="text-yellow-600"></hr>
+          <hr className="text-yellow-600"></hr>
           <div className="flex relative flex-col py-5 lg:flex-row justify-between">
             <div className="lg:w-5/12">
               <img
