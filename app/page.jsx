@@ -55,7 +55,7 @@ export default function Home() {
 
       <section className="relative flex flex-col pt-6 items-start ">
         <div className="md:max-w-7xl mx-auto w-full px-4 lg:px-0">
-          <h1 className="hero-main text-5xl md:text-7xl w-6/12 mb-8 text-black/80">
+          <h1 className="hero-main text-[5vh] md:text-7xl w-6/12 mb-8 text-black/80">
             CONSTRUCTION & ENGINEERING
             <br />
             {/* <span className="text-black/70 ">The art of workmenship</span> */}
@@ -75,10 +75,13 @@ export default function Home() {
             our expertise, infinite possibilities.
           </div> */}
         </div>
-        <div className="absolute  right-5 lg:right-10 transform ">
-          {/* <img src="/images/logo.png" className=" w-[8rem] md:w-[16rem] "></img> */}
-          <h1 className="lg:text-2xl text-lg text-black/80 uppercase">
-           Since- 2017
+        <div className="absolute -top-24 flex flex-col justify-end items-end right-0 lg:right-10 transform ">
+          <img src="/images/Since2017.png" className=" w-[8rem] md:w-[14rem] "></img>
+          <h1 className=" hidden lg:block text-lg text-black/80 uppercase text-start w-full">
+           Practical Advice.
+          </h1>
+           <h1 className=" hidden lg:block text-lg text-black/80 uppercase">
+           Commercial Outcomes.
           </h1>
         </div>
 
