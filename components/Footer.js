@@ -103,9 +103,8 @@ export default function Footer() {
         ))}
 
         {/* Nav Links */}
-
         {/* Info Section */}
-        <div className="text-gray-100 flex flex-col gap-1 text-sm mb-7">
+        <div className="text-gray-100 flex items-center justify-between text-sm mb-7">
           <span>
             Bangalore , Karnataka &nbsp;&nbsp;
             <span className="text-white">|</span>&nbsp;&nbsp;
@@ -126,8 +125,10 @@ export default function Footer() {
         />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between pt-4 text-gray-100 text-sm gap-3">
-          <small>Copyright © 2025 Oniness. All rights reserved.</small>
+        <div className="flex items-center justify-center">
+          <p className="text-md text-center ">
+            Copyright © 2025 Oneness. All rights reserved.
+          </p>
           {/* <div className="flex gap-4">
             <span>Web design by RankMantra.</span>
             <span>Privacy Policy</span>

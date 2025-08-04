@@ -15,7 +15,7 @@ const ContactHero = () => {
 
                 {/* Right Side Animated Text */}
                 <div className="md:w-[60%] md:mt-[80px] w-full">
-                    <AnimatedText className="text-lg md:text-1xl  font-[400]  text-white text-center md:text-left">
+                    <AnimatedText className="text-lg md:text-2xl font-sentient   text-white text-center md:text-left">
                         We are passionate about what we do and empowered to turn great ideas into reality, delivering superior service and ongoing value to our clients.
                     </AnimatedText>
                 </div>

@@ -19,13 +19,13 @@ const AnimatedSentence = ({ text }) => {
     gsap.set(el, { x: '100vw', opacity: 1 });
 
     const animation = gsap.to(el, {
-      x: '80%',  // Move to center (50% from the left viewport)
+      x: '40%',  // Move to center (50% from the left viewport)
       xPercent: -80, // offset to center exact since transform-origin is center
       ease: 'power1.out',
       scrollTrigger: {
         trigger: el,
         start: 'top bottom',    // when sentence top hits bottom of viewport
-        end: 'top top',      // till sentence top reaches center of viewport
+        end: 'bottom top',      // till sentence top reaches center of viewport
         scrub: true,            // smooth scrubbing synced to scroll
         // markers: true,       // uncomment for debug markers
       },
