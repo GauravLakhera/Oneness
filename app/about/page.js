@@ -275,69 +275,73 @@ export default function About() {
       </div>
 
       {/* Tweenty year  */}
+      <div className=" bg-[#33312f]">
+        <section className="flex container mt-16 w-7xl mx-auto lg:mt-0 flex-col lg:flex-row  min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+          <div className="flex flex-col gap-10 lg:max-w-[50%]">
+            <div className=" mb-2 lg:mb-8 text-[#efe0b1] ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="a"
+                x="0"
+                y="0"
+                height={100}
+                width={100}
+                viewBox="0 0 80 80"
+                className="-rotate-90 text-white"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <polygon
+                    points="62.6,67.5 12.4,67.5 12.4,17.2 13.6,17.2 13.6,66.2 62.6,66.2"
+                    fill="currentColor"
+                  />
+                </g>
+                <g>
+                  <rect
+                    x="2.2"
+                    y="39.3"
+                    transform="matrix(0.7075 -0.7067 0.7067 0.7075 -16.5202 40.0866)"
+                    width="75.9"
+                    height="1.3"
+                    fill="currentColor"
+                  />
+                </g>
+              </svg>
+            </div>
 
-      <section className="flex mt-16 lg:mt-0 flex-col lg:flex-row bg-[#33312f] min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
-        <div className="flex flex-col gap-10 lg:max-w-[50%]">
-          <div className=" mb-2 lg:mb-8 text-[#efe0b1] ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="a"
-              x="0"
-              y="0"
-              height={100}
-              width={100}
-              viewBox="0 0 80 80"
-              className="-rotate-90 text-white"
-              xmlSpace="preserve"
-            >
-              <g>
-                <polygon
-                  points="62.6,67.5 12.4,67.5 12.4,17.2 13.6,17.2 13.6,66.2 62.6,66.2"
-                  fill="currentColor"
-                />
-              </g>
-              <g>
-                <rect
-                  x="2.2"
-                  y="39.3"
-                  transform="matrix(0.7075 -0.7067 0.7067 0.7075 -16.5202 40.0866)"
-                  width="75.9"
-                  height="1.3"
-                  fill="currentColor"
-                />
-              </g>
-            </svg>
+            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
+              Oneness is celebrating 8 years of serving India's construction and
+              engineering industry. we have built a reputation
+              for delivering sharp legal insight, commercial clarity and strategic
+              depth across some of the country’s most complex projects. With a
+              team known for its technical excellence, we’re proud to say–very few
+              do what Kreisson does.
+            </p>
+            <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white font-sentient whitespace-nowrap">
+              EIGHT <span className="relative md:top-[150px] md:left-[-100px]">YEARS</span>
+            </div>
           </div>
+          <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
 
-          <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
-            Oneness is celebrating 8 years of serving India's construction and
-            engineering industry. we have built a reputation
-            for delivering sharp legal insight, commercial clarity and strategic
-            depth across some of the country’s most complex projects. With a
-            team known for its technical excellence, we’re proud to say–very few
-            do what Kreisson does.
-          </p>
-          <div className="font-medium hidden lg:block md:text-[8rem] text-right tracking-wider text-white font-sentient">
-            EIGHT
+            <img
+              src="/images/year.jpg"
+              alt="Businessman in shadow"
+              className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
+            />
+
+            <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
+              EIGHT <span className="relative top-[50px] md:left-[-100px]">YEARS</span>
+            </div>
+
+            <div className="w-full  md:py-3 flex items-center md:justify-end">
+              <button className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+                Our team &rarr;
+              </button>
+            </div>
+
           </div>
-        </div>
-        <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
-          <img
-            src="/images/year.jpg"
-            alt="Businessman in shadow"
-            className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
-          />
-          <div className="block lg:hidden font-medium font-sentient text-5xl md:text-[8rem] text-white mt-10  tracking-wider">
-            EIGHT
-          </div>
-          <div className=" font-medium font-sentient text-5xl text-right w-full md:text-[8rem] text-white lg:mt-10 mb-4  tracking-wider">
-            YEARS
-          </div>
-          <button className="mt-8 border border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
-            Our team &rarr;
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Our Memberships/ section */}
       <section className="">
