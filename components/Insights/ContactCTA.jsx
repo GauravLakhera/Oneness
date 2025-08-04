@@ -5,7 +5,7 @@ import { ChevronRight } from 'lucide-react'
 const ContactCTA = () => {
   return (
      <section className="">
-          <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] lg:pt-[10rem]">
+          <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] ">
             <h1 className="text-4xl lg:text-7xl  text-left text-black/80 font-sentient "> Our Memberships/</h1>
   
             <div className=" lg:w-4/12 mt-10">
