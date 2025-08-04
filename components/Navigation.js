@@ -7,10 +7,10 @@ import { gsap } from "gsap";
 import { ChevronRight } from "lucide-react";
 
 const navItems = [
+  { href: "/our-people", label: "Our People" },
   { href: "/about", label: "our expertise" },
   { href: "/services", label: "Sectors", hasDropdown: true },
   { href: "/insights", label: "Insights" },
-  { href: "/", label: "Approach" },
 ];
 
 const sectorItems = [
