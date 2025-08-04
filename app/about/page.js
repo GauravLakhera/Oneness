@@ -271,7 +271,7 @@ export default function About() {
       <section>
         <ProjectPhases />
       </section>
-      <div className="lg:text-[8rem] text-5xl flex flex-col justify-center items-center ">
+      <div className="lg:text-[8rem] py-6 text-5xl flex flex-col justify-center items-center ">
         <h1 className="text1">From Contract</h1>
         <h1 className="text2">To Completion</h1>
       </div>
@@ -313,7 +313,7 @@ export default function About() {
 
           <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
             Oneness is celebrating 8 years of serving India's construction and
-            engineering industry. Over two decades, we have built a reputation
+            engineering industry. we have built a reputation
             for delivering sharp legal insight, commercial clarity and strategic
             depth across some of the country’s most complex projects. With a
             team known for its technical excellence, we’re proud to say–very few

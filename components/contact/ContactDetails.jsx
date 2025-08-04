@@ -21,8 +21,7 @@ const ContactDetails = () => {
                   Direction
                 </div>
                 <div className="text:3xl md:text-4xl  leading-snug">
-                  Suite 37.01, Level 37, 25 Martin Place Sydney<br />
-                  NSW 2000, Australia
+                  Bengaluru Karnataka
                 </div>
               </div>
 
@@ -31,7 +30,7 @@ const ContactDetails = () => {
                 <div className="w-full md:w-[20%] text-sm text-white/60 uppercase tracking-wide mb-2 md:mb-0">
                   Phone
                 </div>
-                <div className="text:3xl md:text-4xl">+61 2 8239 6500</div>
+                <div className="text:3xl md:text-4xl">+91 6364538472</div>
               </div>
 
               {/* Email Row */}
@@ -39,7 +38,7 @@ const ContactDetails = () => {
                 <div className="w-full md:w-[20%] text-sm text-white/60 uppercase tracking-wide mb-2 md:mb-0">
                   Email
                 </div>
-                <div className="text:3xl md:text-4xl">excellence@kreisson.com.au</div>
+                <div className="text:3xl md:text-4xl">info@onenessitech.com</div>
               </div>
             </div>
           </div>

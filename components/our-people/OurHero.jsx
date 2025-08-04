@@ -15,8 +15,8 @@ const OurHero = () => {
 
                 {/* Right Side Animated Text */}
                 <div className="md:w-[60%] md:mt-[180px] w-full">
-                    <AnimatedText className="text-2xl md:text-4xl lg:text-5xl font-[300] leading-snug text-black text-center md:text-left">
-                        Kreisson’s solution-driven outlook is the product of an innovative and supportive culture.
+                    <AnimatedText className="text-2xl font-sentient md:text-4xl lg:text-5xl font-[300] leading-snug text-black text-center md:text-left">
+                        Oneness solution-driven outlook is the product of an innovative and supportive culture.
                     </AnimatedText>
                     <AnimatedText className="text-md mt-8 md:text-lg  font-[300] leading-snug text-black text-center md:text-left">
                       We are an elite legal team with decades of applied industry experience, giving us a deep understanding of the business context of our clients. We are considered, commercial and strategic in all advice we give and all actions we take.
