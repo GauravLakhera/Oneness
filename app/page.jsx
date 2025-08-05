@@ -8,6 +8,7 @@ import AnimatedSentence from "@/components/AnimatedSentence";
 import PhaseCards from "@/components/PhaseCards";
 import CollapsibleDetailList from "@/components/CollapsibleDetailList";
 import PartnersCarousel from "@/components/PartnersCarousel";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -105,14 +106,14 @@ export default function Home() {
             transformation.{" "}
           </h1>
           <div className="flex mt-4 gap-6">
-            <button className="text-sm flex border items-center border-yellow-700/60 text-black  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500">
+            <Link href='/our-people' className="text-sm flex border items-center border-yellow-600/60 text-black  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500">
               <span>OUR TEAM</span>
               <ChevronRight size={32} strokeWidth={0.75} />
-            </button>
-            <button className="text-sm flex border items-center border-yellow-700/60 text-black  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500">
+            </Link>
+            <Link href='/about' className="text-sm flex border items-center border-yellow-600/60 text-black  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500">
               <span>OUR EXPERTISE</span>
               <ChevronRight size={32} strokeWidth={0.75} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -158,7 +159,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <hr className="hidden lg:block w-10/12 mx-auto"></hr>
+        <hr className="hidden lg:block text-yellow-700 w-10/12 mx-auto"></hr>
         <CollapsibleDetailList />
       </div>
 
@@ -222,9 +223,9 @@ export default function Home() {
             </div>
 
             <div className="w-full  md:py-3 flex items-center md:justify-end">
-              <button className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+              <Link href='/our-people' className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
                 Our team &rarr;
-              </button>
+              </Link>
             </div>
 
           </div>
@@ -257,7 +258,7 @@ export default function Home() {
                 className="object-cover grayscale h-[20rem]"
               ></img>
             </div>
-            <div className=" absolute lg:relative right-0 top-5 flex flex-col items-end justify-center pr-16 space-y-3 lg:space-y-2">
+            <div className=" absolute lg:relative right-0 top-5 flex flex-col items-end justify-center pr-5 lg:pr-16 space-y-3 lg:space-y-2">
               <div className=" mb-8 text-[#efe0b1] ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +291,7 @@ export default function Home() {
               </div>
               <h1 className="text-end">Protect Your Project </h1>
               <h1 className="md:text-[8rem] text-6xl text-end ">CONTACT US</h1>
-              <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <button className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
                 <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
               </button>
             </div>

@@ -1,6 +1,5 @@
 "use client";
 
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
@@ -279,7 +278,19 @@ export default function PhaseCards() {
     triggersRef.current = [];
 
     cardsRef.current.forEach((el, i) => {
-      const animation = gsap.fromTo(
+      const topLine = el.querySelector('.animated-top-line');
+      const rightLine = el.querySelector('.animated-right-line');
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        }
+      });
+
+      // Card entrance
+      tl.fromTo(
         el,
         { y: 60, opacity: 0 },
         {
@@ -287,54 +298,93 @@ export default function PhaseCards() {
           opacity: 1,
           duration: 0.9,
           ease: "power2.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
           delay: i * 0.15,
         }
       );
 
-      if (animation.scrollTrigger) {
-        triggersRef.current.push(animation.scrollTrigger);
+      // Top line animation with scale effect
+      if (topLine) {
+        tl.fromTo(
+          topLine,
+          { 
+            scaleX: 0,
+            transformOrigin: "left center",
+            opacity: 1
+          },
+          {
+            scaleX: 1,
+            duration: 0.8,
+            ease: "power3.out",
+          },
+          "-=0.4"
+        );
+      }
+
+      // Right line animation with scale effect
+      if (rightLine) {
+        tl.fromTo(
+          rightLine,
+          { 
+            scaleY: 0,
+            transformOrigin: "center top",
+            opacity: 1
+          },
+          {
+            scaleY: 1,
+            duration: 1.0,
+            ease: "power3.out",
+          },
+          "-=0.5"
+        );
+      }
+
+      if (tl.scrollTrigger) {
+        triggersRef.current.push(tl.scrollTrigger);
       }
     });
 
     return () => {
       triggersRef.current.forEach((trigger) => trigger.kill());
-
       gsap.killTweensOf(cardsRef.current);
     };
   }, []);
 
   return (
     <section className="bg-white py-20">
-      <div className="max-w-6xl  grid grid-cols-1 md:grid-cols-3 justify-self-end gap-10">
+      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-3 justify-self-end gap-10">
         {phases.map((phase, idx) => (
           <div
             key={phase.title}
             ref={(el) => (cardsRef.current[idx] = el)}
-            className="bg-white p-8  text-center "
+            className="bg-white p-8 text-center relative overflow-hidden"
           >
-            {" "}
-            <div className="text-5xl text-yellow-700/80 mb-2 font-medium text-start border-b border-black/80">{`0${
-              idx + 1
-            }.`}</div>
-            <div className="border-r border-black/80">
-              {phase.icon}
+            {/* Number section */}
+            <div className="text-5xl text-yellow-700/80 mb-2 font-medium text-start relative pb-4">
+              {`0${idx + 1}.`}
+              {/* Animated horizontal line - thicker and with gradient */}
+              <div className="animated-top-line absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-black/80 to-black/40 opacity-0 rounded-full"></div>
+            </div>
 
-              <h3 className="text-2xl  text-black mb-4 text-start">
-                {phase.title}
-              </h3>
-              <div className="text-gray-700 mb-5  text-start">
-                {phase.description}
+            {/* Content section */}
+            <div className="relative pr-4">
+              {/* Animated vertical line - full height with gradient */}
+              <div className="animated-right-line absolute top-0 right-0 w-[1px] h-full bg-gradient-to-b from-black/80 to-black/40 opacity-0 rounded-full"></div>
+              
+              <div className="relative z-10">
+                {phase.icon}
+                
+                <h3 className="text-2xl text-black mb-4 text-start">
+                  {phase.title}
+                </h3>
+                <div className="text-gray-700 mb-5 text-start">
+                  {phase.description}
+                </div>
+                <ul className="text-left list-disc list-inside text-black/90 space-y-2">
+                  {phase.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
               </div>
-              <ul className="text-left list-disc list-inside text-black/90 space-y-2 ">
-                {phase.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
             </div>
           </div>
         ))}

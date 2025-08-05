@@ -311,18 +311,20 @@ export default function About() {
 
             <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
               Oneness is celebrating 8 years of serving India's construction and
-              engineering industry. we have built a reputation
-              for delivering sharp legal insight, commercial clarity and strategic
-              depth across some of the country’s most complex projects. With a
-              team known for its technical excellence, we’re proud to say–very few
-              do what Kreisson does.
+              engineering industry. we have built a reputation for delivering
+              sharp legal insight, commercial clarity and strategic depth across
+              some of the country’s most complex projects. With a team known for
+              its technical excellence, we’re proud to say–very few do what
+              Kreisson does.
             </p>
             <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white font-sentient whitespace-nowrap">
-              EIGHT <span className="relative md:top-[150px] md:left-[-100px]">YEARS</span>
+              EIGHT{" "}
+              <span className="relative md:top-[150px] md:left-[-100px]">
+                YEARS
+              </span>
             </div>
           </div>
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
-
             <img
               src="/images/year.jpg"
               alt="Businessman in shadow"
@@ -330,7 +332,10 @@ export default function About() {
             />
 
             <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
-              EIGHT <span className="relative top-[50px] md:left-[-100px]">YEARS</span>
+              EIGHT{" "}
+              <span className="relative top-[50px] md:left-[-100px]">
+                YEARS
+              </span>
             </div>
 
             <div className="w-full  md:py-3 flex items-center md:justify-end">
@@ -338,7 +343,6 @@ export default function About() {
                 Our team &rarr;
               </button>
             </div>
-
           </div>
         </section>
       </div>
