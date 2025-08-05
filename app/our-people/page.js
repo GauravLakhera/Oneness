@@ -12,7 +12,7 @@ export default function Approach() {
   return (
     <>
       <OurHero />
-      <section className="border-b border-black/80 pb-5">
+      <section className="border-b border-yellow-600/80 pb-5">
         <AnimatedSentence text="Built on knowledge." />
       </section>
       <OurTeam />

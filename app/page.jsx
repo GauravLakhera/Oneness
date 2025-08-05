@@ -64,10 +64,10 @@ export default function Home() {
           <div className="text-xl section-title mb-3 max-w-2xl">
             Engineering Excellence Through Collaborative Innovation
           </div>
-          <button className="text-sm lg:text-lg flex justify-center items-center border border-black/60 text-black/70  px-2 py-1">
+          <Link href='/contact' className="text-sm lg:text-lg flex justify-center w-max items-center border border-black/60 text-black/70  px-2 py-1">
             <span>BOOK A CONSULTATION</span>
             <ChevronRight size={32} strokeWidth={0.75} />
-          </button>
+          </Link>
 
           {/* <div className="hero-description body-text max-w-xl opacity-80">
             We deliver cutting-edge engineering solutions with precision, 

@@ -9,6 +9,8 @@ import CustomIcon from "@/components/CustomIcon";
 import ProjectPhases from "@/components/ProjectPhases";
 import PartnersCarousel from "@/components/PartnersCarousel";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -47,14 +49,20 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black/80 pt-32">
+    <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
-      <section className="py-8 lg:py-14 section-padding">
+            <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
+        <Link href="/" className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full">
+          <IoIosArrowBack className="text-yellow-600 text-2xl" />
+         
+        </Link>
+      </div>
+      <section className="py-8 lg:py-16 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
             <p className="lg:text-6xl text-4xl mb-12">Expertise/</p>
             <div className="max-w-3xl ml-auto">
-              <p className="text-3xl font-sentient leading-relaxed  ">
+              <p className="text-3xl  font-sentient leading-relaxed  ">
                 We are engineers, innovators, and problem solvers united by a
                 singular vision: to create technology solutions that transcend
                 conventional boundaries and deliver unprecedented value.
