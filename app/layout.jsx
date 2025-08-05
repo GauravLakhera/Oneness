@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Oneness Pheretechno - Engineering Excellence',
+  title: 'ONENESS SPHERE TECHNO - Engineering Excellence',
   description: 'Modern engineering solutions with collaborative precision and innovative excellence.',
 };
 
