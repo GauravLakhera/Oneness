@@ -103,25 +103,32 @@ export default function Footer() {
         ))}
 
         {/* Nav Links */}
-        {/* Info Section */}
-        <div className="text-gray-100 flex items-center justify-between text-sm mb-7">
-          <span>
-            Bangalore , Karnataka &nbsp;&nbsp;
-            <span className="text-white">|</span>&nbsp;&nbsp;
-            info@onenessitech.com &nbsp;&nbsp;
-            <span className="text-white">|</span>&nbsp;&nbsp; +91 6364538472
+        <div className="text-gray-100 flex flex-col md:flex-row md:items-center md:justify-between text-sm mb-4 sm:mb-7 space-y-3 md:space-y-0">
+          <span className="flex flex-col sm:flex-row sm:items-center text-center md:text-left">
+            <span className="mb-1 sm:mb-0">Bangalore, Karnataka</span>
+            <span className="hidden sm:inline text-white mx-2">|</span>
+            <span className="mb-1 sm:mb-0">info@onenessitech.com</span>
+            <span className="hidden sm:inline text-white mx-2">|</span>
+            <span>+91 6364538472</span>
           </span>
-          <div className="flex gap-7 mt-2">
-            <a className="hover:underline cursor-pointer">LinkedIn</a>
-            <a className="hover:underline cursor-pointer">Facebook</a>
-            <a className="hover:underline cursor-pointer">Instagram</a>
+
+          <div className="flex gap-4 sm:gap-7 justify-center md:justify-end mt-1 sm:mt-2">
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+              LinkedIn
+            </a>
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+              Facebook
+            </a>
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+              Instagram
+            </a>
           </div>
         </div>
 
         {/* Last Divider */}
         <div
           ref={(el) => (lineRefs.current[5] = el)}
-          className="w-full h-[2px] bg-[#404044] my-4 origin-left scale-x-0"
+          className="w-full h-[2px] bg-[#c5c5c5] my-4 origin-left scale-x-0"
         />
 
         {/* Bottom Bar */}
