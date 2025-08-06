@@ -9,8 +9,18 @@ const memberData = [
       {
         name: "Vijay Kumar P",
         title: "Managing Director",
-        image:
-          "https://kreisson.com.au/wp-content/uploads/2025/04/Untitled-design-7.svg",
+        image: "/images/md.jpeg",
+        mail: "mailto:",
+        description: `Vijay has been a dedicated Electrical Engineer with Communication in 2008. Over the years, he has built a strong reputation as a skilled litigator, problem solver, and strategist, particularly in the areas of commercial and complex construction.\n\n
+
+With extensive experience in handling high-stakes and large-scale litigation, Vijay is well-versed in navigating the intricacies of complex construction disputes. His expertise also includes the effective and efficient management of multidisciplinary project support teams, ensuring optimal outcomes for every case.\n\n
+
+Vijay’s strategic approach and deep industry knowledge continue to drive value and results across all projects under his leadership.`,
+      },
+      {
+        name: "Ajay Kumar P",
+        title: "Chief Executive Office/proprietor",
+        image: "/images/ce.jpeg",
         mail: "mailto:",
         description: `Vijay has been a dedicated Electrical Engineer with Communication in 2008. Over the years, he has built a strong reputation as a skilled litigator, problem solver, and strategist, particularly in the areas of commercial and complex construction.\n\n
 
@@ -21,48 +31,48 @@ Vijay’s strategic approach and deep industry knowledge continue to drive value
     ],
   },
 
-//   {
-//     Heading: "SOLICITORS",
-//     teamMembers: [
-//       {
-//         name: "Tristan Cockman",
-//         title: "Special Counsel",
-//         image: "https://kreisson.com.au/wp-content/uploads/2025/05/4.svg",
-//         mail: "mailto:",
-//       },
-//       {
-//         name: "John Hodgkinson",
-//         title: "Special Counsel",
-//         image: "https://kreisson.com.au/wp-content/uploads/2025/05/5.svg",
-//         mail: "mailto:",
-//       },
-//       {
-//         name: "Richard Kouchoo",
-//         title: "Special Counsel",
-//         image: "https://kreisson.com.au/wp-content/uploads/2025/05/11.svg",
-//         mail: "mailto:",
-//       },
-//       {
-//         name: "Estelle Nam",
-//         title: "Senior Associate",
-//         image: "https://kreisson.com.au/wp-content/uploads/2025/05/6.svg",
-//         mail: "mailto:",
-//       },
-//       {
-//         name: "Giselle Casagrande",
-//         title: "Associate",
-//         image: "https://kreisson.com.au/wp-content/uploads/2025/05/7.svg",
-//         mail: "mailto:",
-//       },
-//       {
-//         name: "Gretel Wathen",
-//         title: "Associate",
-//         image:
-//           "https://kreisson.com.au/wp-content/uploads/2025/04/Untitled-design-10.svg",
-//         mail: "mailto:",
-//       },
-//     ],
-//   },
+  //   {
+  //     Heading: "SOLICITORS",
+  //     teamMembers: [
+  //       {
+  //         name: "Tristan Cockman",
+  //         title: "Special Counsel",
+  //         image: "https://kreisson.com.au/wp-content/uploads/2025/05/4.svg",
+  //         mail: "mailto:",
+  //       },
+  //       {
+  //         name: "John Hodgkinson",
+  //         title: "Special Counsel",
+  //         image: "https://kreisson.com.au/wp-content/uploads/2025/05/5.svg",
+  //         mail: "mailto:",
+  //       },
+  //       {
+  //         name: "Richard Kouchoo",
+  //         title: "Special Counsel",
+  //         image: "https://kreisson.com.au/wp-content/uploads/2025/05/11.svg",
+  //         mail: "mailto:",
+  //       },
+  //       {
+  //         name: "Estelle Nam",
+  //         title: "Senior Associate",
+  //         image: "https://kreisson.com.au/wp-content/uploads/2025/05/6.svg",
+  //         mail: "mailto:",
+  //       },
+  //       {
+  //         name: "Giselle Casagrande",
+  //         title: "Associate",
+  //         image: "https://kreisson.com.au/wp-content/uploads/2025/05/7.svg",
+  //         mail: "mailto:",
+  //       },
+  //       {
+  //         name: "Gretel Wathen",
+  //         title: "Associate",
+  //         image:
+  //           "https://kreisson.com.au/wp-content/uploads/2025/04/Untitled-design-10.svg",
+  //         mail: "mailto:",
+  //       },
+  //     ],
+  //   },
 ];
 
 const TeamGrid = () => {
@@ -127,7 +137,7 @@ const TeamGrid = () => {
                   <p className="text-black/80 font-semibold my-2  text-[18px]">
                     {member.title}
                   </p>
-                  {member?.description&&(<p>{member.description}</p>)}
+                  {member?.description && <p>{member.description}</p>}
                   {member?.mail ? (
                     <a
                       href={member.mail}

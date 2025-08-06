@@ -32,7 +32,7 @@ export default function Approach() {
             strategic.
           </h1>
           <p className="text-black/80 text-lg mt-5  md:text-1xl leading-4  font-[300]">
-            David Glinatsis
+           Ajay Kumar P
           </p>
         </div>
       </div>
