@@ -18,25 +18,25 @@ const sectorItems = [
     title: "Building & Construction",
     description:
       "Comprehensive support and tailored solutions to principals, contractors and subcontractors throughout all residential and commercial project stages.",
-    href: "/services",
+    href: "/services#building&construction",
   },
   {
     title: "Infrastructure Projects",
     description:
       "Collaborative advice across large-scale infrastructure lifecycles to navigate legal complexities, minimise risk and efficiently achieve project success.",
-    href: "/services",
+    href: "/services#infrastructure",
   },
   {
     title: "Engineering",
     description:
       "ONENESS plays a crucial role in designing, developing, and executing technical solutions for infrastructure, industrial, and commercial projects, ensuring efficiency, safety, and compliance with industry standards.",
-    href: "/services",
+    href: "/services#engineering",
   },
   {
     title: "Energy & Environment",
     description:
-      "Energy and environmental devlopment projects explicitly outline the client responsibilities, detailing specific E&S (environmental and social) commitments, requirements, and provisions derived from sources like E&S policies, regulatory mandates, ESIA documentation (environmental and social impact assessment), and supplemental assessments.",
-    href: "/services",
+      "Energy and environmental devlopment projects explicitly outline the client responsibilities, detailing specific E&S (environmental and social) commitments, requirements, and provisions derived from sources like E&S policies",
+    href: "/services#energy&environment",
   },
 ];
 
@@ -46,6 +46,7 @@ export default function Navigation() {
   const [isMobileSectorsOpen, setIsMobileSectorsOpen] = useState(false);
   const pathname = usePathname();
   const timeoutRef = useRef(null);
+ 
 
   useEffect(() => {
     gsap.fromTo(
@@ -109,19 +110,20 @@ export default function Navigation() {
                   }
                 >
                   {item.hasDropdown ? (
-                    <span
+                    <Link
+                      href={item.href}
                       className={`nav-item nav-link cursor-pointer flex ${
-                        pathname === item.href ? "opacity-100" : "opacity-60"
+                        pathname === item.href ? "opacity-100 underline" : "opacity-60"
                       } ${isSectorsOpen ? "opacity-100" : ""}`}
                     >
                       {item.label}
                       <ChevronRight className="rotate-90" strokeWidth={1} />
-                    </span>
+                    </Link>
                   ) : (
                     <Link
                       href={item.href}
                       className={`nav-item nav-link ${
-                        pathname === item.href ? "opacity-100" : "opacity-60"
+                        pathname === item.href ? "opacity-100 underline" : "opacity-60 "
                       }`}
                     >
                       {item.label}
@@ -132,7 +134,7 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className={`nav-item nav-link text-white px-3 py-3 rounded-full bg-black ${
-                  pathname === "contact" ? "opacity-100" : "opacity-60"
+                  pathname === "/contact" ? "opacity-100" : "opacity-60"
                 }`}
               >
                 TALK TO US
@@ -243,7 +245,7 @@ export default function Navigation() {
                     onClick={() => setIsSectorsOpen(false)}
                   >
                     <div className="h-full flex flex-col">
-                      <h3 className="text-xl  text-gray-900 group-hover:text-black transition-colors duration-200 mb-3 leading-tight">
+                      <h3 className="text-xl text-gray-900 group-hover:text-black transition-colors duration-200 mb-3 leading-tight">
                         {sector.title}
                       </h3>
                       <p className="text-sm text-gray-600 leading-relaxed flex-1">

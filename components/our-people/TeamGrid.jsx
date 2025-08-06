@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CgMail } from "react-icons/cg";
+import { Phone } from "lucide-react";
 
 const memberData = [
   {
@@ -10,7 +11,9 @@ const memberData = [
         name: "Vijay Kumar P",
         title: "Managing Director",
         image: "/images/md.jpeg",
-        mail: "mailto:",
+        mail: "mailto:vijay@onenessitech.com ",
+        mail2: "vijay@onenessitech.com ",
+        phone: "7411795734",
         description: `Vijay has been a dedicated Electrical Engineer with Communication in 2008. Over the years, he has built a strong reputation as a skilled litigator, problem solver, and strategist, particularly in the areas of commercial and complex construction.\n\n
 
 With extensive experience in handling high-stakes and large-scale litigation, Vijay is well-versed in navigating the intricacies of complex construction disputes. His expertise also includes the effective and efficient management of multidisciplinary project support teams, ensuring optimal outcomes for every case.\n\n
@@ -21,7 +24,7 @@ Vijay’s strategic approach and deep industry knowledge continue to drive value
         name: "Ajay Kumar P",
         title: "Chief Executive Office/proprietor",
         image: "/images/ce.jpeg",
-        mail: "mailto:",
+      
         description: ``,
       },
     ],
@@ -76,7 +79,57 @@ const TeamGrid = () => {
     <div className=" px-4 md:px-10 py-0 ">
       {memberData?.map((item, i) => {
         return (
-          <div key={i} className="flex flex-col md:flex-row md:mt-16">
+          <div key={i} className="flex flex-col-reverse md:flex-row md:mt-16">
+            {/* Right Grid */}
+            <div className="md:w-[80%] grid grid-cols-1  gap-4">
+              {item?.teamMembers?.map((member, index) => (
+                <div
+                  key={index}
+                  className="text-left flex flex-col lg:flex-row justify-start  items-center"
+                >
+                  <div className="overflow-hidden lg:w-6/12 ">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={50}
+                      height={50}
+                      className="w-10/12 object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 px-2  space-y-3 lg:space-y-10">
+                    <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
+                      {member.name}
+                    </h3>
+                    <p className="text-black/80 font-semibold my-2  text-[18px]">
+                      {member.title}
+                    </p>
+
+                    <div>
+                      {member?.mail ? (
+                        <a
+                          href={member.mail}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="mt-2  rounded-[5px] flex gap-3 ">
+                            <CgMail className="text-black text-[22px] " />
+                            <h1>{member.mail2}</h1>
+                          </div>
+                        </a>
+                      ) : null}
+                      {member?.phone ? (
+                        <div className="  rounded-[5px] flex gap-3 ">
+                          <Phone className="text-black text-[22px] " />
+                          <h1>{member.phone}</h1>
+                        </div>
+                      ) : null}
+                    </div>
+                    {member?.description && <p>{member.description}</p>}
+                  </div>
+                </div>
+              ))}
+            </div>
+
             {/* Left Sidebar */}
             <div className="md:w-[20%] mb-8 md:mb-0 ">
               <div className="pl-4 flex flex-row md:flex-col items-center mt-10 md:items-start md:mt-0">
@@ -91,7 +144,7 @@ const TeamGrid = () => {
                   height={50}
                   width={100}
                   viewBox="0 0 80 80"
-                  className="-rotate-90 md:mt-8 text-black/80"
+                  className=" md:mt-8 text-black/80"
                   xmlSpace="preserve"
                 >
                   <g>
@@ -112,43 +165,6 @@ const TeamGrid = () => {
                   </g>
                 </svg>
               </div>
-            </div>
-
-            {/* Right Grid */}
-            <div className="md:w-[80%] grid grid-cols-1  gap-4">
-              {item?.teamMembers?.map((member, index) => (
-                <div key={index} className="text-left flex justify-start border border-black/10 items-center">
-                  <div className="overflow-hidden w-6/12 ">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={50}
-                      height={50}
-                      className="w-10/12 object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 px-2  space-y-10">
-                    <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
-                      {member.name}
-                    </h3>
-                    <p className="text-black/80 font-semibold my-2  text-[18px]">
-                      {member.title}
-                    </p>
-                    {member?.description && <p>{member.description}</p>}
-                    {member?.mail ? (
-                      <a
-                        href={member.mail}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="mt-2 inline-block rounded-[5px] p-1 bg-black/80 ">
-                          <CgMail className="text-white text-[22px]" />
-                        </div>
-                      </a>
-                    ) : null}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         );

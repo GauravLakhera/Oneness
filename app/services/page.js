@@ -10,6 +10,7 @@ import ProjectPhases from "@/components/ProjectPhases";
 import PartnersCarousel from "@/components/PartnersCarousel";
 import { ChevronRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import ServicesSection from "@/components/ServicesSection"
 
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
@@ -218,6 +219,10 @@ export default function Services() {
           </div>
         </div>
       </section>
+      
+      <div>
+        <ServicesSection/>
+      </div>
 
       {/* Detailed Services Showcase */}
       <section className="py-16 lg:py-24 bg-white">
