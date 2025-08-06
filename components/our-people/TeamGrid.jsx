@@ -22,11 +22,7 @@ Vijay’s strategic approach and deep industry knowledge continue to drive value
         title: "Chief Executive Office/proprietor",
         image: "/images/ce.jpeg",
         mail: "mailto:",
-        description: `Vijay has been a dedicated Electrical Engineer with Communication in 2008. Over the years, he has built a strong reputation as a skilled litigator, problem solver, and strategist, particularly in the areas of commercial and complex construction.\n\n
-
-With extensive experience in handling high-stakes and large-scale litigation, Vijay is well-versed in navigating the intricacies of complex construction disputes. His expertise also includes the effective and efficient management of multidisciplinary project support teams, ensuring optimal outcomes for every case.\n\n
-
-Vijay’s strategic approach and deep industry knowledge continue to drive value and results across all projects under his leadership.`,
+        description: ``,
       },
     ],
   },
@@ -82,7 +78,7 @@ const TeamGrid = () => {
         return (
           <div key={i} className="flex flex-col md:flex-row md:mt-16">
             {/* Left Sidebar */}
-            <div className="md:w-[30%] mb-8 md:mb-0">
+            <div className="md:w-[20%] mb-8 md:mb-0 ">
               <div className="pl-4 flex flex-row md:flex-col items-center mt-10 md:items-start md:mt-0">
                 <h2 className="text-[#1a1a1a] font-[300] text-4xl leading-tight">
                   {item?.Heading}
@@ -119,36 +115,38 @@ const TeamGrid = () => {
             </div>
 
             {/* Right Grid */}
-            <div className="md:w-[70%] grid grid-cols-1  gap-4">
+            <div className="md:w-[80%] grid grid-cols-1  gap-4">
               {item?.teamMembers?.map((member, index) => (
-                <div key={index} className="text-left">
-                  <div className="overflow-hidden w-full">
+                <div key={index} className="text-left flex justify-start border border-black/10 items-center">
+                  <div className="overflow-hidden w-6/12 ">
                     <Image
                       src={member.image}
                       alt={member.name}
                       width={50}
                       height={50}
-                      className="w-6/12 object-cover"
+                      className="w-10/12 object-cover"
                     />
                   </div>
-                  <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
-                    {member.name}
-                  </h3>
-                  <p className="text-black/80 font-semibold my-2  text-[18px]">
-                    {member.title}
-                  </p>
-                  {member?.description && <p>{member.description}</p>}
-                  {member?.mail ? (
-                    <a
-                      href={member.mail}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div className="mt-2 inline-block rounded-[5px] p-1 bg-black/80 ">
-                        <CgMail className="text-white text-[22px]" />
-                      </div>
-                    </a>
-                  ) : null}
+                  <div className="flex-1 px-2  space-y-10">
+                    <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
+                      {member.name}
+                    </h3>
+                    <p className="text-black/80 font-semibold my-2  text-[18px]">
+                      {member.title}
+                    </p>
+                    {member?.description && <p>{member.description}</p>}
+                    {member?.mail ? (
+                      <a
+                        href={member.mail}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="mt-2 inline-block rounded-[5px] p-1 bg-black/80 ">
+                          <CgMail className="text-white text-[22px]" />
+                        </div>
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
               ))}
             </div>

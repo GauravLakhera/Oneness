@@ -51,10 +51,12 @@ export default function About() {
   return (
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
-            <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
-        <Link href="/" className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full">
+      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
+        <Link
+          href="/"
+          className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full"
+        >
           <IoIosArrowBack className="text-yellow-600 text-2xl" />
-         
         </Link>
       </div>
       <section className="py-8 lg:py-16 section-padding">
@@ -209,11 +211,11 @@ export default function About() {
       <section className="pt-32 pb-10 lg:pb-3 section-padding bg-black/90 text-white/80">
         <div className="flex justify-between  flex-col-reverse lg:flex-row gap-6">
           <h1 className="text-3xl lg:w-8/12">
-            At ONENESS Sphere Techno, we deliver integrated technological
-            solutions that transform businesses through innovation and strategic
-            excellence. We specialize in bringing together diverse expertise
-            under one unified vision, leveraging cutting-edge technologies to
-            streamline complexities and drive measurable growth.
+            We specialize in civil and electrical engineering services —
+            offering design, installation, supervision, and commissioning for
+            residential, commercial, and industrial projects. Our work is backed
+            by technical expertise, commitment to safety, and compliance with
+            industry standards.
           </h1>
           <h1 className="text-5xl">What we do/</h1>
         </div>

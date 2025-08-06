@@ -33,14 +33,14 @@ const sectorItems = [
   {
     title: "Engineering",
     description:
-      "Tailored advice and peerless expertise to protect your interests and enhance your objectives within the complex engineering project landscape.",
+      "ONENESS plays a crucial role in designing, developing, and executing technical solutions for infrastructure, industrial, and commercial projects, ensuring efficiency, safety, and compliance with industry standards.",
     href: "/services",
     svg: "https://kreisson.com.au/wp-content/uploads/2025/04/CONTRACT-DELIVERY-3.svg",
   },
   {
     title: "Energy & Environment",
     description:
-      "Careful and considered navigation of the legal and regulatory landscape to keep your projects on track, on time and adhering to all standards.",
+      "Energy and environmental devlopment projects explicitly outline the client responsibilities, detailing specific E&S (environmental and social) commitments, requirements, and provisions derived from sources like E&S policies, regulatory mandates, ESIA documentation (environmental and social impact assessment), and supplemental assessments.",
     href: "/services",
     svg: "https://kreisson.com.au/wp-content/uploads/2025/04/ENERGY-2-1.svg",
   },
