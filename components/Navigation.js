@@ -18,25 +18,25 @@ const sectorItems = [
     title: "Building & Construction",
     description:
       "Comprehensive support and tailored solutions to principals, contractors and subcontractors throughout all residential and commercial project stages.",
-    href: "/services#building&construction",
+    href: "/buildingConstruction",
   },
   {
     title: "Infrastructure Projects",
     description:
       "Collaborative advice across large-scale infrastructure lifecycles to navigate legal complexities, minimise risk and efficiently achieve project success.",
-    href: "/services#infrastructure",
+    href: "/infrastructure",
   },
   {
     title: "Engineering",
     description:
       "ONENESS plays a crucial role in designing, developing, and executing technical solutions for infrastructure, industrial, and commercial projects, ensuring efficiency, safety, and compliance with industry standards.",
-    href: "/services#engineering",
+    href: "/engineering",
   },
   {
     title: "Energy & Environment",
     description:
       "Energy and environmental devlopment projects explicitly outline the client responsibilities, detailing specific E&S (environmental and social) commitments, requirements, and provisions derived from sources like E&S policies",
-    href: "/services#energy&environment",
+    href: "/energyEnvironment",
   },
 ];
 
