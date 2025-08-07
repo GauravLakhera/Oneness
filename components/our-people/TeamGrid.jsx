@@ -95,9 +95,14 @@ const TeamGrid = () => {
                       height={50}
                       className="w-10/12 object-cover"
                     />
+                    <div className="py-4 px-2">
                     <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
                       {member.name}
                     </h3>
+                                        <p className="text-black/80 font-semibold my-2  text-[18px]">
+                      {member.title}
+                    </p>
+                    </div>
                   </div>
                   <div className="flex-1 px-2  space-y-3 lg:space-y-10">
                     <div>
@@ -120,9 +125,7 @@ const TeamGrid = () => {
                         </div>
                       ) : null} */}
                     </div>
-                    <p className="text-black/80 font-semibold my-2  text-[18px]">
-                      {member.title}
-                    </p>
+
                     {member?.description && <p>{member.description}</p>}
                   </div>
                 </div>
