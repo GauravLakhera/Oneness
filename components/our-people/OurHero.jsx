@@ -6,13 +6,13 @@ import { IoIosArrowBack } from "react-icons/io";
 const OurHero = () => {
   return (
     <div className="relative pt-[160px] md:pt-[80px] pb-[150px]">
-      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
-        <Link href="/" className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full">
-          <IoIosArrowBack className="text-yellow-600 text-2xl" />
+      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32 ">
+        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
+          <IoIosArrowBack className="text-white text-2xl" />
          
         </Link>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center gap-10 md:gap-20">
         {/* Left Side Heading */}
         <div className="md:w-[30%] w-full">
           <p className="text-5xl md:text-7xl font-sans font-[400] text-black text-start md:text-left">

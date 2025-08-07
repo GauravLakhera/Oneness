@@ -6,12 +6,10 @@ import { IoIosArrowBack } from "react-icons/io";
 const InsightsHero = () => {
   return (
     <div className=" relative bg-black/80 pt-[180px] md:pt-[80px] pb-[150px]">
-      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
-        <Link
-          href="/"
-          className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full"
-        >
-          <IoIosArrowBack className="text-yellow-600 text-2xl" />
+      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32 ">
+        <Link href="/" className="flex items-center bg-white/90  px-2 py-2 rounded-full">
+          <IoIosArrowBack className="text-black text-2xl" />
+         
         </Link>
       </div>
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center gap-10 md:gap-20">

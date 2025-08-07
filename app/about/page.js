@@ -51,15 +51,13 @@ export default function About() {
   return (
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
-      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-20 ">
-        <Link
-          href="/"
-          className="flex items-center border px-2 border-yellow-600/60 py-2 rounded-full"
-        >
-          <IoIosArrowBack className="text-yellow-600 text-2xl" />
+      <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32 ">
+        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
+          <IoIosArrowBack className="text-white text-2xl" />
+         
         </Link>
       </div>
-      <section className="py-8 lg:py-16 section-padding">
+      <section className="py-8 lg:py-24 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
             <p className="lg:text-6xl text-4xl mb-12">Expertise/</p>

@@ -11,6 +11,7 @@ import PartnersCarousel from "@/components/PartnersCarousel";
 import { ChevronRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import ServicesSection from "@/components/ServicesSection"
+import { IoIosArrowBack } from "react-icons/io";
 
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
@@ -154,8 +155,14 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black/80 pt-32">
+    <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
+            <div className="absolute top-[7rem] lg:top-[8rem] left-5 lg:left-32 ">
+        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
+          <IoIosArrowBack className="text-white text-2xl" />
+         
+        </Link>
+      </div>
       <section className="py-8 lg:py-14 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
