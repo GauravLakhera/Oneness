@@ -322,7 +322,7 @@ const ProjectPhases = () => {
                         key={pointIndex}
                         className="flex items-start space-x-3 group"
                       >
-                        <div className="flex-shrink-0 w-1 h-1 bg-yellow-700 rounded-full mt-2 group-hover:bg-black/80 transition-colors duration-200"></div>
+                        <div className="flex-shrink-0 w-1 h-1 bg-yellow-600 rounded-full mt-2 group-hover:bg-black/80 transition-colors duration-200"></div>
                         <div className="text-sm ">
                           <span className="font-semibold text-gray-900  transition-colors duration-200">
                             {title}

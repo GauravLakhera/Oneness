@@ -116,7 +116,7 @@ export default function CollapsibleDetailList() {
   }, []);
 
   return (
-    <section className="bg-white text-black py-10">
+    <section className="bg-white text-black/90 py-10">
       <div className="lg:max-w-[85rem] mx-auto divide-y divide-yellow-600">
         {ITEMS.map((item, idx) => (
           <div key={item.title} ref={(el) => (cardsRef.current[idx] = el)}>

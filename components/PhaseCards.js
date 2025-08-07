@@ -278,15 +278,15 @@ export default function PhaseCards() {
     triggersRef.current = [];
 
     cardsRef.current.forEach((el, i) => {
-      const topLine = el.querySelector('.animated-top-line');
-      const rightLine = el.querySelector('.animated-right-line');
+      const topLine = el.querySelector(".animated-top-line");
+      const rightLine = el.querySelector(".animated-right-line");
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: el,
           start: "top 85%",
           toggleActions: "play none none reverse",
-        }
+        },
       });
 
       // Card entrance
@@ -306,10 +306,10 @@ export default function PhaseCards() {
       if (topLine) {
         tl.fromTo(
           topLine,
-          { 
+          {
             scaleX: 0,
             transformOrigin: "left center",
-            opacity: 1
+            opacity: 1,
           },
           {
             scaleX: 1,
@@ -324,10 +324,10 @@ export default function PhaseCards() {
       if (rightLine) {
         tl.fromTo(
           rightLine,
-          { 
+          {
             scaleY: 0,
             transformOrigin: "center top",
-            opacity: 1
+            opacity: 1,
           },
           {
             scaleY: 1,
@@ -359,7 +359,7 @@ export default function PhaseCards() {
             className="bg-white p-8 text-center relative overflow-hidden"
           >
             {/* Number section */}
-            <div className="text-5xl text-yellow-700/80 mb-2 font-medium text-start relative pb-4">
+            <div className="text-5xl text-yellow-600/80 mb-2 font-medium text-start relative pb-4">
               {`0${idx + 1}.`}
               {/* Animated horizontal line - thicker and with gradient */}
               <div className="animated-top-line absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-black/80 to-black/40 opacity-0 rounded-full"></div>
@@ -369,10 +369,10 @@ export default function PhaseCards() {
             <div className="relative pr-4">
               {/* Animated vertical line - full height with gradient */}
               <div className="animated-right-line absolute top-0 right-0 w-[1px] h-full bg-gradient-to-b from-black/80 to-black/40 opacity-0 rounded-full"></div>
-              
+
               <div className="relative z-10">
                 {phase.icon}
-                
+
                 <h3 className="text-2xl text-black mb-4 text-start">
                   {phase.title}
                 </h3>

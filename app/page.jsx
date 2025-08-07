@@ -64,7 +64,10 @@ export default function Home() {
           <div className="text-xl section-title mb-3 max-w-2xl">
             Engineering Excellence Through Collaborative Innovation
           </div>
-          <Link href='/contact' className="text-sm lg:text-lg flex justify-center w-max items-center border border-black/60 text-black/70  px-2 py-1">
+          <Link
+            href="/contact"
+            className="text-sm lg:text-lg flex justify-center w-max items-center border border-black/60 text-black/70  px-2 py-1"
+          >
             <span>BOOK A CONSULTATION</span>
             <ChevronRight size={32} strokeWidth={0.75} />
           </Link>
@@ -76,7 +79,10 @@ export default function Home() {
           </div> */}
         </div>
         <div className="absolute -top-24 flex flex-col justify-end items-end right-0 lg:right-10 transform ">
-          <img src="/images/Since2017.png" className=" w-[8rem] md:w-[14rem] "></img>
+          <img
+            src="/images/Since2017.png"
+            className=" w-[8rem] md:w-[14rem] "
+          ></img>
           <h1 className=" hidden lg:block text-lg text-black/80 uppercase text-start w-full">
             Practical Advice.
           </h1>
@@ -93,7 +99,10 @@ export default function Home() {
 
       <section className="lg:py-16 py-0 px-4 lg:px-0 relative">
         <div className="md:max-w-7xl mx-auto w-full py-10 lg:py-28">
-          <AnimatedText className="md:w-8/12 text-3xl lg:text-6xl leading-[3rem] font-sentient text-black/80" splitType="words">
+          <AnimatedText
+            className="md:w-8/12 text-3xl lg:text-6xl leading-[3rem] font-sentient text-black/80"
+            splitType="words"
+          >
             ONENESS is a progressive civil engineering, architecture, and
             interior design firm based in Bengaluru, delivering innovative
             technical solutions to clients across India.
@@ -106,11 +115,17 @@ export default function Home() {
             transformation.{" "}
           </h1>
           <div className="flex mt-4 gap-6">
-            <Link href='/our-people' className="text-sm flex border items-center border-yellow-600/60 text-black  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500">
+            <Link
+              href="/our-people"
+              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500"
+            >
               <span>OUR TEAM</span>
               <ChevronRight size={32} strokeWidth={0.75} />
             </Link>
-            <Link href='/about' className="text-sm flex border items-center border-yellow-600/60 text-black  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500">
+            <Link
+              href="/about"
+              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500"
+            >
               <span>OUR EXPERTISE</span>
               <ChevronRight size={32} strokeWidth={0.75} />
             </Link>
@@ -122,14 +137,19 @@ export default function Home() {
         <AnimatedSentence text="Innovate. Design. Build. Excellence." />
       </section>
 
-      <hr className="text-yellow-700"></hr>
+      <hr className="text-yellow-600"></hr>
 
       {/* Our Expertise/ */}
       <section className="py-5 w-11/12 mx-auto">
         <div>
-          <h1 className="text-4xl lg:text-7xl  text-right text-black/80">Our Expertise/</h1>
+          <h1 className="text-4xl lg:text-7xl  text-right text-black/80">
+            Our Expertise/
+          </h1>
         </div>
-        <AnimatedText className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem] font-sentient text-black/80" splitType="words">
+        <AnimatedText
+          className="lg:w-8/12 lg:text-5xl text-3xl pt-14 leading-[3rem] font-sentient text-black/80"
+          splitType="words"
+        >
           Our multidisciplinary team delivers superior results at every phase of
           your project’s lifecycle. Leveraging extensive experience across civil
           engineering, architecture, and design sectors, we proactively identify
@@ -147,7 +167,9 @@ export default function Home() {
 
       <div>
         <div className="relative w-11/12 md:w-10/12 mx-auto pt-10 pb-[15rem]">
-          <h1 className="text-4xl lg:text-7xl w-8/12 md:w-4/12 text-black/80">Sectors we work in/</h1>
+          <h1 className="text-4xl lg:text-7xl w-8/12 md:w-4/12 text-black/80">
+            Sectors we work in/
+          </h1>
           <div className="absolute right-10 md:w-6/12">
             <p className="md:text-xl text-black/80 py-10 font-sentient">
               ONENESS partners with clients across a diverse spectrum of
@@ -159,7 +181,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <hr className="hidden lg:block text-yellow-700 w-10/12 mx-auto"></hr>
+        <hr className="hidden lg:block text-yellow-600 w-10/12 mx-auto"></hr>
         <CollapsibleDetailList />
       </div>
 
@@ -200,18 +222,20 @@ export default function Home() {
 
             <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
               Oneness is celebrating 8 years of serving India's construction and
-              engineering industry. we have built a reputation
-              for delivering sharp legal insight, commercial clarity and strategic
-              depth across some of the country’s most complex projects. With a
-              team known for its technical excellence, we’re proud to say–very few
-              do what Kreisson does.
+              engineering industry. we have built a reputation for delivering
+              sharp legal insight, commercial clarity and strategic depth across
+              some of the country’s most complex projects. With a team known for
+              its technical excellence, we’re proud to say–very few do what
+              Kreisson does.
             </p>
             <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white font-sentient whitespace-nowrap">
-              EIGHT <span className="relative md:top-[150px] md:left-[-100px]">YEARS</span>
+              EIGHT{" "}
+              <span className="relative md:top-[150px] md:left-[-100px]">
+                YEARS
+              </span>
             </div>
           </div>
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
-
             <img
               src="/images/year.jpg"
               alt="Businessman in shadow"
@@ -219,15 +243,20 @@ export default function Home() {
             />
 
             <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
-              EIGHT <span className="relative top-[50px] md:left-[-100px]">YEARS</span>
+              EIGHT{" "}
+              <span className="relative top-[50px] md:left-[-100px]">
+                YEARS
+              </span>
             </div>
 
             <div className="w-full  md:py-3 flex items-center md:justify-end">
-              <Link href='/our-people' className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+              <Link
+                href="/our-people"
+                className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base"
+              >
                 Our team &rarr;
               </Link>
             </div>
-
           </div>
         </section>
       </div>
@@ -235,7 +264,10 @@ export default function Home() {
       {/* Our Memberships/ section */}
       <section className="">
         <div className="w-10/12 mx-auto  flex flex-col lg:flex-row justify-between pt-[3rem] pb-[3rem] lg:pb-[5rem] lg:pt-[10rem]">
-          <h1 className="text-4xl lg:text-7xl  text-left text-black/80 font-sentient "> Our Memberships/</h1>
+          <h1 className="text-4xl lg:text-7xl  text-left text-black/80 font-sentient ">
+            {" "}
+            Our Memberships/
+          </h1>
 
           <div className=" lg:w-4/12 mt-10">
             <p>

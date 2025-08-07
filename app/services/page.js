@@ -269,7 +269,7 @@ export default function Services() {
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500"></div>
                         <div className="absolute bottom-6 left-6 right-6">
                           <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                            <h4 className="font-sentient text-black">
+                            <h4 className="font-sentient text-black/90">
                               {service.title}
                             </h4>
                           </div>
@@ -300,7 +300,7 @@ export default function Services() {
 
                       {/* Features List */}
                       <div className="space-y-3">
-                        <h4 className="text-lg font-sentient text-black mb-4">
+                        <h4 className="text-lg font-sentient text-black/80 mb-4">
                           Key Features:
                         </h4>
                         <ul className="space-y-3">
