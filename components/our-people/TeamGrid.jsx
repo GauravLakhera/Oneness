@@ -24,7 +24,7 @@ Vijay’s strategic approach and deep industry knowledge continue to drive value
         name: "Ajay Kumar P",
         title: "Chief Executive Office/proprietor",
         image: "/images/ce.jpeg",
-      
+
         description: ``,
       },
     ],
@@ -81,11 +81,11 @@ const TeamGrid = () => {
         return (
           <div key={i} className="flex flex-col-reverse md:flex-row md:mt-16">
             {/* Right Grid */}
-            <div className="md:w-[80%] grid grid-cols-1  gap-4">
+            <div className="md:w-[80%] grid grid-cols-1  gap-10">
               {item?.teamMembers?.map((member, index) => (
                 <div
                   key={index}
-                  className="text-left flex flex-col lg:flex-row justify-start  items-center"
+                  className="text-left flex flex-col lg:flex-row justify-start  items-center gap-6 border border-black/5 py-6"
                 >
                   <div className="overflow-hidden lg:w-6/12 ">
                     <Image
@@ -95,15 +95,11 @@ const TeamGrid = () => {
                       height={50}
                       className="w-10/12 object-cover"
                     />
-                  </div>
-                  <div className="flex-1 px-2  space-y-3 lg:space-y-10">
                     <h3 className="text-4xl font-[300] text-[#1a1a1a] mt-4">
                       {member.name}
                     </h3>
-                    <p className="text-black/80 font-semibold my-2  text-[18px]">
-                      {member.title}
-                    </p>
-
+                  </div>
+                  <div className="flex-1 px-2  space-y-3 lg:space-y-10">
                     <div>
                       {member?.mail ? (
                         <a
@@ -117,13 +113,16 @@ const TeamGrid = () => {
                           </div>
                         </a>
                       ) : null}
-                      {member?.phone ? (
+                      {/* {member?.phone ? (
                         <div className="  rounded-[5px] flex gap-3 ">
                           <Phone className="text-black text-[22px] " />
                           <h1>{member.phone}</h1>
                         </div>
-                      ) : null}
+                      ) : null} */}
                     </div>
+                    <p className="text-black/80 font-semibold my-2  text-[18px]">
+                      {member.title}
+                    </p>
                     {member?.description && <p>{member.description}</p>}
                   </div>
                 </div>

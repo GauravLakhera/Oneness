@@ -301,6 +301,7 @@ export default function InfrastructureProjects() {
               We support project success by being proactive and precise, enabling our clients 
               to act early, protect their position, and move forward with confidence.
             </p>
+              <p className="text-sm text-white/60">Photo of Managing Director</p>
           </div>
           
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
@@ -309,7 +310,7 @@ export default function InfrastructureProjects() {
               alt="CEO"
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
-            <p className="text-sm text-white/60">Photo of MD</p>
+          
           </div>
         </section>
 
@@ -353,6 +354,7 @@ export default function InfrastructureProjects() {
               and forward-thinking professionals who consistently deliver innovative, 
               cost-effective, and responsible solutions for our clients.
             </p>
+             <p className="text-sm text-white/60">Photo of Chief Executive Office/proprietor</p>
           </div>
           
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
@@ -361,7 +363,7 @@ export default function InfrastructureProjects() {
               alt="General Manager"
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
-            <p className="text-sm text-white/60">Photo of Chief Executive Office/proprietor</p>
+           
           </div>
         </section>
       </div>

@@ -55,8 +55,8 @@ export default function Footer() {
               <img src="/images/logo.png"></img>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <form className="mt-5 flex gap-3 max-w-md">
+          <div className="flex flex-col mt-5 md:flex-row justify-between  items-center">
+            <form className=" flex gap-3 max-w-md">
               <input
                 type="email"
                 placeholder="Email address"
@@ -70,7 +70,7 @@ export default function Footer() {
               </button>
             </form>
 
-            <nav className="flex flex-wrap gap-7 mt-6 mb-2 md:mb-8 text-sm font-light text-white/80">
+            <nav className="flex flex-wrap gap-7   text-sm font-light text-white/80">
               <a className="hover:underline cursor-pointer duration-150">
                 Our people
               </a>
@@ -103,7 +103,7 @@ export default function Footer() {
         ))}
 
         {/* Nav Links */}
-        <div className="text-gray-100 flex flex-col md:flex-row md:items-center md:justify-between text-sm mb-4 sm:mb-7 space-y-3 md:space-y-0">
+        <div className="text-gray-100  flex flex-col md:flex-row md:items-center md:justify-between text-sm mb-4 sm:mb-7 space-y-3 md:space-y-0">
           <span className="flex flex-col sm:flex-row sm:items-center text-center md:text-left">
             <span className="mb-1 sm:mb-0">Bangalore, Karnataka</span>
             <span className="hidden sm:inline text-white mx-2">|</span>
