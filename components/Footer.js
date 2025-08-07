@@ -103,7 +103,7 @@ export default function Footer() {
         ))}
 
         {/* Nav Links */}
-        <div className="text-gray-100  flex flex-col md:flex-row md:items-center md:justify-between text-sm mb-4 sm:mb-7 space-y-3 md:space-y-0">
+        <div className="text-gray-100  flex flex-col md:flex-row md:items-center md:justify-between text-lg mb-4 sm:mb-7 space-y-3 md:space-y-0">
           <span className="flex flex-col sm:flex-row sm:items-center text-center md:text-left">
             <span className="mb-1 sm:mb-0">Bangalore, Karnataka</span>
             <span className="hidden sm:inline text-white mx-2">|</span>
