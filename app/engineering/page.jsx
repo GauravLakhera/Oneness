@@ -437,7 +437,7 @@ export default function Engineering() {
               </div>
               <h1 className="text-end">Engineer Your Success</h1>
               <h1 className="md:text-[8rem] text-6xl text-end">CONTACT US</h1>
-              <Link href="/contact" className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <Link href="/contact" className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
                 <span>GET IN TOUCH</span> <ChevronRight strokeWidth={1} />
               </Link>
             </div>

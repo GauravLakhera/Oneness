@@ -1,6 +1,7 @@
 import React from 'react'
 import PartnersCarousel from '../PartnersCarousel'
 import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 const ContactCTA = () => {
   return (
@@ -62,9 +63,9 @@ const ContactCTA = () => {
                 </div>
                 <h1 className="text-end">Protect Your Project </h1>
                 <h1 className="md:text-[8rem] text-6xl text-end ">CONTACT US</h1>
-                <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+                <Link href='/contact' className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
                   <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

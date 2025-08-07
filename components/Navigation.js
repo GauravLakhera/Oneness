@@ -112,7 +112,7 @@ export default function Navigation() {
                   {item.hasDropdown ? (
                     <Link
                       href={item.href}
-                      className={`nav-item nav-link cursor-pointer flex ${
+                      className={`nav-item nav-link cursor-pointer flex items-center ${
                         pathname === item.href ? "opacity-100 underline" : "opacity-60"
                       } ${isSectorsOpen ? "opacity-100" : ""}`}
                     >
