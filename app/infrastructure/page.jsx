@@ -18,7 +18,6 @@ import { PiNuclearPlantFill } from "react-icons/pi";
 import { FaCarTunnel } from "react-icons/fa6";
 import { TbBuildingFactory2 } from "react-icons/tb";
 
-
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -60,21 +59,27 @@ export default function InfrastructureProjects() {
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
       <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32">
-        <Link href="/" className="flex items-center bg-black/90 px-2 py-2 rounded-full">
-          <IoIosArrowBack className="text-white text-2xl" />
+        <Link
+          href="/"
+          className="flex items-center bg-black/90 px-2 py-2 rounded-full"
+        >
+          <IoIosArrowBack className="text-white/90 text-2xl" />
         </Link>
       </div>
 
       <section className="py-8 lg:py-24 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
-            <p className="lg:text-6xl text-4xl mb-12">Infrastructure Projects/</p>
+            <p className="lg:text-6xl text-4xl mb-12">
+              Infrastructure Projects/
+            </p>
             <div className="max-w-3xl ml-auto">
               <p className="text-3xl font-sentient leading-relaxed">
-                ONENESS specializes in delivering comprehensive engineering solutions for 
-                infrastructure projects, including design, construction, installation, and 
-                ongoing maintenance. We take pride in offering end-to-end services that ensure 
-                not only the successful execution of infrastructure works but also their 
+                ONENESS specializes in delivering comprehensive engineering
+                solutions for infrastructure projects, including design,
+                construction, installation, and ongoing maintenance. We take
+                pride in offering end-to-end services that ensure not only the
+                successful execution of infrastructure works but also their
                 long-term performance and reliability.
               </p>
             </div>
@@ -83,8 +88,11 @@ export default function InfrastructureProjects() {
       </section>
 
       {/* Mission Statement */}
-      <img src="https://cdn.pixabay.com/photo/2022/11/04/05/50/city-7569067_1280.jpg" className="grayscale w-full h-96 object-cover" />
-      
+      <img
+        src="https://cdn.pixabay.com/photo/2022/11/04/05/50/city-7569067_1280.jpg"
+        className="grayscale w-full h-96 object-cover"
+      />
+
       <section className="pb-20 section-padding bg-[#dcdbd0]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-1 py-10 gap-20 bg-[#dcdbd0]">
@@ -94,9 +102,10 @@ export default function InfrastructureProjects() {
                 className="text-2xl opacity-80 mb-8"
                 splitType="words"
               >
-                With a strong emphasis on durability, performance, and client satisfaction, 
-                we deliver infrastructure projects that are built to last and supported with 
-                reliable technical maintenance throughout their lifecycle.
+                With a strong emphasis on durability, performance, and client
+                satisfaction, we deliver infrastructure projects that are built
+                to last and supported with reliable technical maintenance
+                throughout their lifecycle.
               </AnimatedText>
             </FadeInSection>
           </div>
@@ -104,124 +113,184 @@ export default function InfrastructureProjects() {
       </section>
 
       {/* What we do */}
-      <section className="pt-32 pb-10  section-padding bg-black/90 text-white/80">
+      <section className="pt-32 pb-10  section-padding bg-black/90 text-white/90">
         <div className="flex justify-between flex-col-reverse lg:flex-row gap-6">
           <h1 className="text-3xl lg:w-8/12">
-            Our experienced managers, engineers and project teams work on major infrastructure 
-            projects where time, cost and compliance risks are tightly interwoven. These projects 
-            often operate under demanding public frameworks, making precise legal strategy essential.
+            Our experienced managers, engineers and project teams work on major
+            infrastructure projects where time, cost and compliance risks are
+            tightly interwoven. These projects often operate under demanding
+            public frameworks, making precise legal strategy essential.
           </h1>
           <h1 className="text-5xl">What we do/</h1>
         </div>
       </section>
 
       {/* Our Expertise Section */}
-<section className="py-20 section-padding bg-[#dcdbd0]">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-5xl mb-16 text-center font-sentient">Our Expertise/</h2>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {[
-        { 
-          title: "Roads & Highways", 
-          icon: <LiaRoadSolid/>,
-          description: "Complete road construction from rural pathways to major highways",
-          details: ["Asphalt & concrete paving", "Traffic signal installation", "Road marking & signage", "Bridge construction"]
-        },
-        { 
-          title: "Drainage Systems", 
-          icon: <FaWater/>,
-          description: "Comprehensive water management and flood prevention solutions",
-          details: ["Storm water drainage", "Underground pipe networks", "Retention ponds", "Flood mitigation systems"]
-        },
-        { 
-          title: "Foundations & Structures", 
-          icon: <FaBridge/>,
-          description: "Robust foundation solutions for all types of construction projects",
-          details: ["Deep foundation systems", "Retaining walls", "Concrete structures", "Pile driving & testing"]
-        },
-        { 
-          title: "Utility Buildings", 
-          icon: <PiBuildingOfficeFill/>,
-          description: "Essential infrastructure buildings for public and private utilities",
-          details: ["Substations & control rooms", "Water treatment facilities", "Maintenance workshops", "Administrative buildings"]
-        },
-        { 
-          title: "Electrical Networks", 
-          icon: <MdOutlineElectricBolt/>,
-          description: "Complete electrical infrastructure from generation to distribution",
-          details: ["HT/LT line installation", "Transformer stations", "Power distribution systems", "Street lighting networks"]
-        },
-        { 
-          title: "Sewage Treatment Plants", 
-          icon: <PiNuclearPlantFill/>,
-          description: "Modern wastewater treatment facilities for environmental protection",
-          details: ["Primary & secondary treatment", "Sludge management", "Effluent polishing", "Biogas recovery systems"]
-        },
-        { 
-          title: "Tunnels & Underground Works", 
-          icon: <FaCarTunnel/>,
-          description: "Complex underground infrastructure for transportation and utilities",
-          details: ["Road & rail tunnels", "Utility corridors", "Subway systems", "Underground parking"]
-        },
-        { 
-          title: "Waste Management Facilities", 
-          icon: <TbBuildingFactory2/>,
-          description: "Comprehensive waste processing and recycling infrastructure",
-          details: ["Material recovery facilities", "Composting plants", "Incineration systems", "Landfill engineering"]
-        }
-      ].map((item, index) => (
-        <FadeInSection key={index} delay={index * 0.1}>
-          <div className="bg-white/50 rounded-lg hover:bg-white/70 transition-all duration-300 p-6 h-full">
-            <div className="text-center mb-6">
-              <div className="text-4xl mb-4 text-black/70">{item.icon}</div>
-              <h3 className="text-xl font-medium mb-3">{item.title}</h3>
-              <p className="text-sm text-black/70 mb-4 leading-relaxed">{item.description}</p>
-            </div>
-            
-            <div className="space-y-2">
-              {item.details.map((detail, detailIndex) => (
-                <div key={detailIndex} className="flex items-center text-sm text-black/60">
-                  <div className="w-1.5 h-1.5 bg-black/40 rounded-full mr-3 flex-shrink-0"></div>
-                  <span>{detail}</span>
-                </div>
-              ))}
-            </div>
+      <section className="py-20 section-padding bg-[#dcdbd0]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl mb-16 text-center font-sentient">
+            Our Expertise/
+          </h2>
 
-            <div className="mt-6 pt-4 border-t border-yellow-600/90">
-              <Link href='/contact' className="text-xs text-black/60 hover:text-black/80 font-medium uppercase tracking-wider transition-colors duration-300">
-                Contact us  →
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Roads & Highways",
+                icon: <LiaRoadSolid />,
+                description:
+                  "Complete road construction from rural pathways to major highways",
+                details: [
+                  "Asphalt & concrete paving",
+                  "Traffic signal installation",
+                  "Road marking & signage",
+                  "Bridge construction",
+                ],
+              },
+              {
+                title: "Drainage Systems",
+                icon: <FaWater />,
+                description:
+                  "Comprehensive water management and flood prevention solutions",
+                details: [
+                  "Storm water drainage",
+                  "Underground pipe networks",
+                  "Retention ponds",
+                  "Flood mitigation systems",
+                ],
+              },
+              {
+                title: "Foundations & Structures",
+                icon: <FaBridge />,
+                description:
+                  "Robust foundation solutions for all types of construction projects",
+                details: [
+                  "Deep foundation systems",
+                  "Retaining walls",
+                  "Concrete structures",
+                  "Pile driving & testing",
+                ],
+              },
+              {
+                title: "Utility Buildings",
+                icon: <PiBuildingOfficeFill />,
+                description:
+                  "Essential infrastructure buildings for public and private utilities",
+                details: [
+                  "Substations & control rooms",
+                  "Water treatment facilities",
+                  "Maintenance workshops",
+                  "Administrative buildings",
+                ],
+              },
+              {
+                title: "Electrical Networks",
+                icon: <MdOutlineElectricBolt />,
+                description:
+                  "Complete electrical infrastructure from generation to distribution",
+                details: [
+                  "HT/LT line installation",
+                  "Transformer stations",
+                  "Power distribution systems",
+                  "Street lighting networks",
+                ],
+              },
+              {
+                title: "Sewage Treatment Plants",
+                icon: <PiNuclearPlantFill />,
+                description:
+                  "Modern wastewater treatment facilities for environmental protection",
+                details: [
+                  "Primary & secondary treatment",
+                  "Sludge management",
+                  "Effluent polishing",
+                  "Biogas recovery systems",
+                ],
+              },
+              {
+                title: "Tunnels & Underground Works",
+                icon: <FaCarTunnel />,
+                description:
+                  "Complex underground infrastructure for transportation and utilities",
+                details: [
+                  "Road & rail tunnels",
+                  "Utility corridors",
+                  "Subway systems",
+                  "Underground parking",
+                ],
+              },
+              {
+                title: "Waste Management Facilities",
+                icon: <TbBuildingFactory2 />,
+                description:
+                  "Comprehensive waste processing and recycling infrastructure",
+                details: [
+                  "Material recovery facilities",
+                  "Composting plants",
+                  "Incineration systems",
+                  "Landfill engineering",
+                ],
+              },
+            ].map((item, index) => (
+              <FadeInSection key={index} delay={index * 0.1}>
+                <div className="bg-white/50 rounded-lg hover:bg-white/70 transition-all duration-300 p-6 h-full">
+                  <div className="text-center mb-6">
+                    <div className="text-4xl mb-4 text-black/70">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-xl font-medium mb-3">{item.title}</h3>
+                    <p className="text-sm text-black/70 mb-4 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    {item.details.map((detail, detailIndex) => (
+                      <div
+                        key={detailIndex}
+                        className="flex items-center text-sm text-black/60"
+                      >
+                        <div className="w-1.5 h-1.5 bg-black/40 rounded-full mr-3 flex-shrink-0"></div>
+                        <span>{detail}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-yellow-600/90">
+                    <Link
+                      href="/contact"
+                      className="text-xs text-black/60 hover:text-black/80 font-medium uppercase tracking-wider transition-colors duration-300"
+                    >
+                      Contact us →
+                    </Link>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+
+          {/* Additional Stats Section */}
+          <div className="mt-20 pt-16 border-t border-yellow-600/90">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <h4 className="text-3xl font-sentient mb-2">500+</h4>
+                <p className="text-sm text-black/70">Projects Completed</p>
+              </div>
+              <div>
+                <h4 className="text-3xl font-sentient mb-2">8</h4>
+                <p className="text-sm text-black/70">Years Experience</p>
+              </div>
+              <div>
+                <h4 className="text-3xl font-sentient mb-2">50+</h4>
+                <p className="text-sm text-black/70">Expert Engineers</p>
+              </div>
+              <div>
+                <h4 className="text-3xl font-sentient mb-2">100%</h4>
+                <p className="text-sm text-black/70">Client Satisfaction</p>
+              </div>
             </div>
           </div>
-        </FadeInSection>
-      ))}
-    </div>
-
-    {/* Additional Stats Section */}
-    <div className="mt-20 pt-16 border-t border-yellow-600/90">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <h4 className="text-3xl font-sentient mb-2">500+</h4>
-          <p className="text-sm text-black/70">Projects Completed</p>
         </div>
-        <div>
-          <h4 className="text-3xl font-sentient mb-2">8</h4>
-          <p className="text-sm text-black/70">Years Experience</p>
-        </div>
-        <div>
-          <h4 className="text-3xl font-sentient mb-2">50+</h4>
-          <p className="text-sm text-black/70">Expert Engineers</p>
-        </div>
-        <div>
-          <h4 className="text-3xl font-sentient mb-2">100%</h4>
-          <p className="text-sm text-black/70">Client Satisfaction</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <div className="lg:px-20">
         <svg
@@ -263,7 +332,7 @@ export default function InfrastructureProjects() {
 
       {/* Industry Expert Section */}
       <div className="bg-[#33312f]">
-        <section className="flex container mt-16 w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+        <section className="flex container mt-16 w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-white/90 justify-between items-start px-8 py-16 gap-8">
           <div className="flex flex-col gap-10 lg:max-w-[50%]">
             <div className="mb-2 lg:mb-8 text-[#efe0b1]">
               <svg
@@ -274,7 +343,7 @@ export default function InfrastructureProjects() {
                 height={100}
                 width={100}
                 viewBox="0 0 80 80"
-                className="-rotate-90 text-white"
+                className="-rotate-90 text-white/90"
                 xmlSpace="preserve"
               >
                 <g>
@@ -297,25 +366,25 @@ export default function InfrastructureProjects() {
             </div>
 
             <h3 className="text-3xl font-sentient mb-4">Industry Expert/</h3>
-            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
-              We support project success by being proactive and precise, enabling our clients 
-              to act early, protect their position, and move forward with confidence.
+            <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
+              We support project success by being proactive and precise,
+              enabling our clients to act early, protect their position, and
+              move forward with confidence.
             </p>
-              <p className="text-sm text-white/60">Managing Director</p>
+            <p className="text-sm text-white/90/60">Managing Director</p>
           </div>
-          
+
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
             <img
               src="/images/md.jpeg"
               alt="CEO"
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
-          
           </div>
         </section>
 
         {/* Second Expert Section */}
-        <section className="flex container w-7xl mx-auto flex-col lg:flex-row-reverse min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+        <section className="flex container w-7xl mx-auto flex-col lg:flex-row-reverse min-h-screen text-white/90 justify-between items-start px-8 py-16 gap-8">
           <div className="flex flex-col gap-10 lg:max-w-[50%]">
             <div className="mb-2 lg:mb-8 text-[#efe0b1]">
               <svg
@@ -326,7 +395,7 @@ export default function InfrastructureProjects() {
                 height={100}
                 width={100}
                 viewBox="0 0 80 80"
-                className="-rotate-90 text-white"
+                className="-rotate-90 text-white/90"
                 xmlSpace="preserve"
               >
                 <g>
@@ -349,21 +418,23 @@ export default function InfrastructureProjects() {
             </div>
 
             <h3 className="text-3xl font-sentient mb-4">Industry Expert/</h3>
-            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
-              Our team consists of creative problem solvers as well as careful, strategic, 
-              and forward-thinking professionals who consistently deliver innovative, 
-              cost-effective, and responsible solutions for our clients.
+            <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
+              Our team consists of creative problem solvers as well as careful,
+              strategic, and forward-thinking professionals who consistently
+              deliver innovative, cost-effective, and responsible solutions for
+              our clients.
             </p>
-             <p className="text-sm text-white/60">Chief Executive Office/proprietor</p>
+            <p className="text-sm text-white/90/60">
+              Chief Executive Office/proprietor
+            </p>
           </div>
-          
+
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
             <img
               src="/images/ce.jpeg"
               alt="General Manager"
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
-           
           </div>
         </section>
       </div>
@@ -412,8 +483,13 @@ export default function InfrastructureProjects() {
                 </svg>
               </div>
               <h1 className="text-end">Build Your Future</h1>
-              <h1 className="md:text-[8rem] text-6xl text-end">CONTACT US</h1>
-              <Link href='/contact' className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <h1 className="md:text-[8rem] text-6xl text-black/80 text-end">
+                CONTACT US
+              </h1>
+              <Link
+                href="/contact"
+                className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white/90 transition-all duration-500 ease-in-out"
+              >
                 <span>GET IN TOUCH</span> <ChevronRight strokeWidth={1} />
               </Link>
             </div>

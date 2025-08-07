@@ -46,7 +46,6 @@ export default function Navigation() {
   const [isMobileSectorsOpen, setIsMobileSectorsOpen] = useState(false);
   const pathname = usePathname();
   const timeoutRef = useRef(null);
- 
 
   useEffect(() => {
     gsap.fromTo(
@@ -113,7 +112,9 @@ export default function Navigation() {
                     <Link
                       href={item.href}
                       className={`nav-item nav-link cursor-pointer flex items-center ${
-                        pathname === item.href ? "opacity-100 underline" : "opacity-60"
+                        pathname === item.href
+                          ? "opacity-100 underline"
+                          : "opacity-60"
                       } ${isSectorsOpen ? "opacity-100" : ""}`}
                     >
                       {item.label}
@@ -123,7 +124,9 @@ export default function Navigation() {
                     <Link
                       href={item.href}
                       className={`nav-item nav-link ${
-                        pathname === item.href ? "opacity-100 underline" : "opacity-60 "
+                        pathname === item.href
+                          ? "opacity-100 underline"
+                          : "opacity-60 "
                       }`}
                     >
                       {item.label}
@@ -133,7 +136,7 @@ export default function Navigation() {
               ))}
               <Link
                 href="/contact"
-                className={`nav-item nav-link text-white px-3 py-3 rounded-full bg-black ${
+                className={`nav-item nav-link text-white/90 px-3 py-3 rounded-full bg-black ${
                   pathname === "/contact" ? "opacity-100" : "opacity-60"
                 }`}
               >

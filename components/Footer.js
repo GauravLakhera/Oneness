@@ -36,7 +36,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-[#656565] text-white w-full pt-10 pb-6 px-6">
+    <footer className="bg-[#656565] text-white/90 w-full pt-10 pb-6 px-6">
       <div className="w-11/12 mx-auto">
         {/* Newsletter */}
         <div className="mb-10">
@@ -60,17 +60,17 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="flex-1 rounded-none bg-[#656565]  border-b border-[#cfcfcf] px-4 py-2 text-white placeholder-gray-200 focus:outline-none"
+                className="flex-1 rounded-none bg-[#656565]  border-b border-[#cfcfcf] px-4 py-2 text-white/90 placeholder-gray-200 focus:outline-none"
               />
               <button
                 type="submit"
-                className="text-white border-none px-5 text-sm tracking-widest transition underline-offset-2 hover:underline"
+                className="text-white/90 border-none px-5 text-sm tracking-widest transition underline-offset-2 hover:underline"
               >
                 GET IN TOUCH &rarr;
               </button>
             </form>
 
-            <nav className="flex flex-wrap gap-7   text-sm font-light text-white/80">
+            <nav className="flex flex-wrap gap-7   text-sm font-light text-white/90">
               <a className="hover:underline cursor-pointer duration-150">
                 Our people
               </a>
@@ -106,20 +106,20 @@ export default function Footer() {
         <div className="text-gray-100  flex flex-col md:flex-row md:items-center md:justify-between text-lg mb-4 sm:mb-7 space-y-3 md:space-y-0">
           <span className="flex flex-col sm:flex-row sm:items-center text-center md:text-left">
             <span className="mb-1 sm:mb-0">Bangalore, Karnataka</span>
-            <span className="hidden sm:inline text-white mx-2">|</span>
+            <span className="hidden sm:inline text-white/90 mx-2">|</span>
             <span className="mb-1 sm:mb-0">info@onenessitech.com</span>
-            <span className="hidden sm:inline text-white mx-2">|</span>
+            <span className="hidden sm:inline text-white/90 mx-2">|</span>
             <span>+91 6364538472</span>
           </span>
 
           <div className="flex gap-4 sm:gap-7 justify-center md:justify-end mt-1 sm:mt-2">
-            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white/90">
               LinkedIn
             </a>
-            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white/90">
               Facebook
             </a>
-            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white">
+            <a className="hover:underline cursor-pointer transition-all duration-200 hover:text-white/90">
               Instagram
             </a>
           </div>

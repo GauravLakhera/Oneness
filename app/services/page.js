@@ -10,7 +10,7 @@ import ProjectPhases from "@/components/ProjectPhases";
 import PartnersCarousel from "@/components/PartnersCarousel";
 import { ChevronRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import ServicesSection from "@/components/ServicesSection"
+import ServicesSection from "@/components/ServicesSection";
 import { IoIosArrowBack } from "react-icons/io";
 
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
@@ -120,10 +120,8 @@ const serviceDetails = [
 ];
 
 export default function Services() {
-
-
   useEffect(() => {
-      gsap.set(".text1", { x: -100 });
+    gsap.set(".text1", { x: -100 });
     gsap.fromTo(
       ".page-hero",
       { y: 60, opacity: 0 },
@@ -157,16 +155,20 @@ export default function Services() {
   return (
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
-            <div className="absolute top-[7rem] lg:top-[8rem] left-5 lg:left-32 ">
-        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
-          <IoIosArrowBack className="text-white text-2xl" />
-         
+      <div className="absolute top-[7rem] lg:top-[8rem] left-5 lg:left-32 ">
+        <Link
+          href="/"
+          className="flex items-center bg-black/90  px-2 py-2 rounded-full"
+        >
+          <IoIosArrowBack className="text-white/90 text-2xl" />
         </Link>
       </div>
       <section className="py-8 lg:py-14 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
-            <p className="lg:text-6xl text-4xl mb-12">Services/</p>
+            <p className="lg:text-6xl text-4xl mb-12 text-black/90">
+              Services/
+            </p>
             <div className="max-w-3xl ml-auto">
               <p className="text-3xl font-sentient leading-relaxed">
                 From concept to completion, we deliver comprehensive
@@ -210,7 +212,7 @@ export default function Services() {
                       className="group hover:bg-white/50 p-6 rounded-lg transition-all duration-300"
                     >
                       <div className="mb-4">
-<img src={sector.svg}></img>
+                        <img src={sector.svg}></img>
                       </div>
                       <h3 className="text-xl font-normal mb-3 group-hover:text-black transition-colors">
                         {sector.title}
@@ -226,9 +228,9 @@ export default function Services() {
           </div>
         </div>
       </section>
-      
+
       <div>
-        <ServicesSection/>
+        <ServicesSection />
       </div>
 
       {/* Detailed Services Showcase */}
@@ -283,7 +285,7 @@ export default function Services() {
                         <div className="inline-block">
                           <div className="flex items-center space-x-4 mb-4">
                             <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                              <span className="text-white font-bold text-lg">
+                              <span className="text-white/90 font-bold text-lg">
                                 {(index + 1).toString().padStart(2, "0")}
                               </span>
                             </div>
@@ -320,7 +322,7 @@ export default function Services() {
                       <div className="pt-4">
                         <Link
                           href="/contact"
-                          className="inline-flex items-center space-x-2 bg-black text-white px-8 py-3 rounded-full hover:bg-black/80 transition-colors duration-300"
+                          className="inline-flex items-center space-x-2 bg-black text-white/90 px-8 py-3 rounded-full hover:bg-black/80 transition-colors duration-300"
                         >
                           <span>Learn More</span>
                           <ChevronRight className="w-4 h-4" />
@@ -352,7 +354,7 @@ export default function Services() {
               height={100}
               width={100}
               viewBox="0 0 80 80"
-              className="-rotate-90 text-white"
+              className="-rotate-90 text-white/90"
               xmlSpace="preserve"
             >
               <g>
@@ -374,14 +376,14 @@ export default function Services() {
             </svg>
           </div>
 
-          <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
+          <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
             With 8 years of dedicated service in India's construction industry,
             ONENESS Sphere Techno has established itself as a trusted partner
             for complex building and infrastructure projects. Our comprehensive
             service portfolio spans from initial design to ongoing maintenance,
             ensuring complete project lifecycle support.
           </p>
-          <div className="font-medium hidden lg:block md:text-[7rem] text-right tracking-wider text-white font-sentient">
+          <div className="font-medium hidden lg:block md:text-[7rem] text-right tracking-wider text-white/90 font-sentient">
             COMPLETE
           </div>
         </div>
@@ -391,13 +393,13 @@ export default function Services() {
             alt="Construction work"
             className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
           />
-          <div className="block lg:hidden font-medium font-sentient text-5xl md:text-[7rem] text-white mt-10 tracking-wider">
+          <div className="block lg:hidden font-medium font-sentient text-5xl md:text-[7rem] text-white/90 mt-10 tracking-wider">
             COMPLETE
           </div>
-          <div className="font-medium font-sentient text-5xl text-right w-full md:text-[7rem] text-white lg:mt-10 mb-4 tracking-wider">
+          <div className="font-medium font-sentient text-5xl text-right w-full md:text-[7rem] text-white/90 lg:mt-10 mb-4 tracking-wider">
             SOLUTIONS
           </div>
-          <button className="mt-8 border border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+          <button className="mt-8 border border-white text-white/90 py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
             View Projects &rarr;
           </button>
         </div>
@@ -465,7 +467,7 @@ export default function Services() {
               </div>
               <h1 className="text-end">Start Your Project</h1>
               <h1 className="md:text-[8rem] text-6xl text-end">GET QUOTE</h1>
-              <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <button className="border px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white/90 transition-all duration-500 ease-in-out">
                 <span>REQUEST QUOTE</span> <ChevronRight strokeWidth={1} />
               </button>
             </div>

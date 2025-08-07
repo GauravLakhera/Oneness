@@ -117,14 +117,14 @@ export default function Home() {
           <div className="flex mt-4 gap-6">
             <Link
               href="/our-people"
-              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white transition-all ease-in-out duration-500"
+              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white/90 transition-all ease-in-out duration-500"
             >
               <span>OUR TEAM</span>
               <ChevronRight size={32} strokeWidth={0.75} />
             </Link>
             <Link
               href="/about"
-              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white  transition-all ease-in-out duration-500"
+              className="text-sm flex border items-center border-yellow-600/60 text-black/80  px-4 py-1 hover:bg-black hover:text-white/90  transition-all ease-in-out duration-500"
             >
               <span>OUR EXPERTISE</span>
               <ChevronRight size={32} strokeWidth={0.75} />
@@ -198,7 +198,7 @@ export default function Home() {
                 height={100}
                 width={100}
                 viewBox="0 0 80 80"
-                className="-rotate-90 text-white"
+                className="-rotate-90 text-white/90"
                 xmlSpace="preserve"
               >
                 <g>
@@ -220,7 +220,7 @@ export default function Home() {
               </svg>
             </div>
 
-            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
+            <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
               Oneness is celebrating 8 years of serving India's construction and
               engineering industry. we have built a reputation for delivering
               sharp legal insight, commercial clarity and strategic depth across
@@ -228,7 +228,7 @@ export default function Home() {
               its technical excellence, we’re proud to say–very few do what
               Kreisson does.
             </p>
-            <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white font-sentient whitespace-nowrap">
+            <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
               EIGHT{" "}
               <span className="relative md:top-[150px] md:left-[-100px]">
                 YEARS
@@ -242,7 +242,7 @@ export default function Home() {
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
 
-            <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
+            <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
               EIGHT{" "}
               <span className="relative top-[50px] md:left-[-100px]">
                 YEARS
@@ -252,7 +252,7 @@ export default function Home() {
             <div className="w-full  md:py-3 flex items-center md:justify-end">
               <Link
                 href="/our-people"
-                className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base"
+                className=" border md:mt-[185px] mt-[80px]  border-white text-white/90 py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base"
               >
                 Our team &rarr;
               </Link>
@@ -322,8 +322,10 @@ export default function Home() {
                 </svg>
               </div>
               <h1 className="text-end">Protect Your Project </h1>
-              <h1 className="md:text-[8rem] text-6xl text-end ">CONTACT US</h1>
-              <button className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <h1 className="md:text-[8rem] text-black/80 text-6xl text-end ">
+                CONTACT US
+              </h1>
+              <button className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white/90 transition-all duration-500 ease-in-out">
                 <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
               </button>
             </div>

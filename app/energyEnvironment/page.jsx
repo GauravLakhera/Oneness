@@ -9,32 +9,26 @@ import CustomIcon from "@/components/CustomIcon";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
-import { 
-  FaSolarPanel, 
-  FaWind, 
-  FaLeaf, 
-  FaRecycle, 
-  FaWater, 
+import {
+  FaSolarPanel,
+  FaWind,
+  FaLeaf,
+  FaRecycle,
+  FaWater,
   FaClipboardCheck,
   FaGlobe,
-  FaShieldAlt
+  FaShieldAlt,
 } from "react-icons/fa";
-import { 
-  MdEnergySavingsLeaf, 
-  MdOutlineWbSunny, 
+import {
+  MdEnergySavingsLeaf,
+  MdOutlineWbSunny,
   MdEco,
   MdAssessment,
   MdPolicy,
-  MdManageAccounts
+  MdManageAccounts,
 } from "react-icons/md";
-import { 
-  GiWindTurbine,
-  GiElectric,
-  GiPlantWatering
-} from "react-icons/gi";
-import { 
-  TbReportAnalytics 
-} from "react-icons/tb";
+import { GiWindTurbine, GiElectric, GiPlantWatering } from "react-icons/gi";
+import { TbReportAnalytics } from "react-icons/tb";
 
 if (typeof window !== "undefined" && gsap && ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
@@ -77,8 +71,11 @@ export default function EnergyEnvironment() {
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
       <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32">
-        <Link href="/" className="flex items-center bg-black/90 px-2 py-2 rounded-full">
-          <IoIosArrowBack className="text-white text-2xl" />
+        <Link
+          href="/"
+          className="flex items-center bg-black/90 px-2 py-2 rounded-full"
+        >
+          <IoIosArrowBack className="text-white/90 text-2xl" />
         </Link>
       </div>
 
@@ -88,9 +85,10 @@ export default function EnergyEnvironment() {
             <p className="lg:text-6xl text-4xl mb-12">Energy & Environment/</p>
             <div className="max-w-3xl ml-auto">
               <p className="text-3xl font-sentient leading-relaxed">
-                Energy and environmental development projects explicitly outline the client 
-                responsibilities, detailing specific E&S (environmental and social) commitments, 
-                requirements, and provisions derived from sources like E&S policies, regulatory 
+                Energy and environmental development projects explicitly outline
+                the client responsibilities, detailing specific E&S
+                (environmental and social) commitments, requirements, and
+                provisions derived from sources like E&S policies, regulatory
                 mandates, ESIA documentation, and supplemental assessments.
               </p>
             </div>
@@ -99,8 +97,12 @@ export default function EnergyEnvironment() {
       </section>
 
       {/* Mission Statement */}
-      <img src="https://cdn.pixabay.com/photo/2016/11/19/11/38/windmills-1838788_1280.jpg" className="grayscale w-full h-96 object-cover" alt="Energy and environment solutions" />
-      
+      <img
+        src="https://cdn.pixabay.com/photo/2016/11/19/11/38/windmills-1838788_1280.jpg"
+        className="grayscale w-full h-96 object-cover"
+        alt="Energy and environment solutions"
+      />
+
       <section className="pb-20 section-padding bg-[#dcdbd0]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-1 py-10 gap-20 bg-[#dcdbd0]">
@@ -110,11 +112,12 @@ export default function EnergyEnvironment() {
                 className="text-2xl opacity-80 mb-8"
                 splitType="words"
               >
-                In essence, energy and environmental development, we strive to find the balance 
-                between meeting societal energy needs and protecting the environment for current 
-                and future generations. We are at the forefront of the transition towards a 
-                sustainable energy future, working to build a world where economic growth and 
-                ecological health can coexist.
+                In essence, energy and environmental development, we strive to
+                find the balance between meeting societal energy needs and
+                protecting the environment for current and future generations.
+                We are at the forefront of the transition towards a sustainable
+                energy future, working to build a world where economic growth
+                and ecological health can coexist.
               </AnimatedText>
             </FadeInSection>
           </div>
@@ -122,33 +125,34 @@ export default function EnergyEnvironment() {
       </section>
 
       {/* What we do */}
-      <section className="pt-32 pb-10  section-padding bg-black/90 text-white/80">
+      <section className="pt-32 pb-10  section-padding bg-black/90 text-white/90">
         <div className="flex justify-between flex-col-reverse lg:flex-row gap-6">
           <h1 className="text-3xl lg:w-8/12">
-            We specialize in comprehensive environmental and social impact assessments, 
-            regulatory compliance, and sustainable energy solutions that meet the highest 
-            standards of environmental stewardship while driving economic value for our clients.
+            We specialize in comprehensive environmental and social impact
+            assessments, regulatory compliance, and sustainable energy solutions
+            that meet the highest standards of environmental stewardship while
+            driving economic value for our clients.
           </h1>
           <h1 className="text-5xl">What We Do/</h1>
         </div>
-        
+
         <div className="flex flex-col justify-end items-end text-start mt-10">
-          <ul className="text-sm font-extralight text-white/80 space-y-2">
+          <ul className="text-sm font-extralight text-white/90 space-y-2">
             <li>
-              <strong>Environmental Impact Assessment</strong> - Comprehensive ESIA documentation 
-              and regulatory compliance
+              <strong>Environmental Impact Assessment</strong> - Comprehensive
+              ESIA documentation and regulatory compliance
             </li>
             <li>
-              <strong>Renewable Energy Solutions</strong> - Solar, wind, and sustainable energy 
-              project development
+              <strong>Renewable Energy Solutions</strong> - Solar, wind, and
+              sustainable energy project development
             </li>
             <li>
-              <strong>Environmental Management</strong> - E&S policies, monitoring, and 
-              compliance frameworks
+              <strong>Environmental Management</strong> - E&S policies,
+              monitoring, and compliance frameworks
             </li>
             <li>
-              <strong>Sustainability Consulting</strong> - Strategic guidance for sustainable 
-              development initiatives
+              <strong>Sustainability Consulting</strong> - Strategic guidance
+              for sustainable development initiatives
             </li>
           </ul>
         </div>
@@ -157,70 +161,125 @@ export default function EnergyEnvironment() {
       {/* Our Services Section */}
       <section className="py-20 section-padding bg-[#dcdbd0]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl mb-16 text-center font-sentient">Our Services/</h2>
-          
+          <h2 className="text-5xl mb-16 text-center font-sentient">
+            Our Services/
+          </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { 
-                title: "Environmental Impact Assessment", 
-                icon: <MdAssessment/>,
-                description: "Comprehensive environmental and social impact assessments for development projects",
-                details: ["ESIA documentation", "Environmental baseline studies", "Impact mitigation strategies", "Regulatory compliance review"]
+              {
+                title: "Environmental Impact Assessment",
+                icon: <MdAssessment />,
+                description:
+                  "Comprehensive environmental and social impact assessments for development projects",
+                details: [
+                  "ESIA documentation",
+                  "Environmental baseline studies",
+                  "Impact mitigation strategies",
+                  "Regulatory compliance review",
+                ],
               },
-              { 
-                title: "Renewable Energy Development", 
-                icon: <FaSolarPanel/>,
-                description: "End-to-end renewable energy project development and implementation",
-                details: ["Solar power systems", "Wind energy projects", "Energy storage solutions", "Grid integration planning"]
+              {
+                title: "Renewable Energy Development",
+                icon: <FaSolarPanel />,
+                description:
+                  "End-to-end renewable energy project development and implementation",
+                details: [
+                  "Solar power systems",
+                  "Wind energy projects",
+                  "Energy storage solutions",
+                  "Grid integration planning",
+                ],
               },
-              { 
-                title: "Environmental Management Systems", 
-                icon: <MdEco className="text-green-600"/>,
-                description: "Development and implementation of comprehensive environmental management frameworks",
-                details: ["E&S policy development", "Environmental monitoring plans", "Compliance tracking systems", "Performance indicators"]
+              {
+                title: "Environmental Management Systems",
+                icon: <MdEco className="text-green-600" />,
+                description:
+                  "Development and implementation of comprehensive environmental management frameworks",
+                details: [
+                  "E&S policy development",
+                  "Environmental monitoring plans",
+                  "Compliance tracking systems",
+                  "Performance indicators",
+                ],
               },
-              { 
-                title: "Sustainability Consulting", 
-                icon: <FaLeaf/>,
-                description: "Strategic consulting for sustainable development and green initiatives",
-                details: ["Sustainability strategy", "Carbon footprint assessment", "Green building certification", "ESG compliance"]
+              {
+                title: "Sustainability Consulting",
+                icon: <FaLeaf />,
+                description:
+                  "Strategic consulting for sustainable development and green initiatives",
+                details: [
+                  "Sustainability strategy",
+                  "Carbon footprint assessment",
+                  "Green building certification",
+                  "ESG compliance",
+                ],
               },
-              { 
-                title: "Water & Waste Management", 
-                icon: <FaWater/>,
-                description: "Integrated water and waste management solutions for environmental protection",
-                details: ["Water treatment systems", "Waste management planning", "Recycling programs", "Pollution prevention"]
+              {
+                title: "Water & Waste Management",
+                icon: <FaWater />,
+                description:
+                  "Integrated water and waste management solutions for environmental protection",
+                details: [
+                  "Water treatment systems",
+                  "Waste management planning",
+                  "Recycling programs",
+                  "Pollution prevention",
+                ],
               },
-              { 
-                title: "Environmental Monitoring", 
-                icon: <TbReportAnalytics/>,
-                description: "Continuous monitoring and reporting of environmental parameters",
-                details: ["Air quality monitoring", "Water quality assessment", "Soil contamination testing", "Biodiversity surveys"]
+              {
+                title: "Environmental Monitoring",
+                icon: <TbReportAnalytics />,
+                description:
+                  "Continuous monitoring and reporting of environmental parameters",
+                details: [
+                  "Air quality monitoring",
+                  "Water quality assessment",
+                  "Soil contamination testing",
+                  "Biodiversity surveys",
+                ],
               },
-              { 
-                title: "Regulatory Compliance", 
-                icon: <MdPolicy/>,
-                description: "Ensuring full compliance with environmental regulations and standards",
-                details: ["Permit applications", "Regulatory liaison", "Compliance audits", "Legal documentation"]
+              {
+                title: "Regulatory Compliance",
+                icon: <MdPolicy />,
+                description:
+                  "Ensuring full compliance with environmental regulations and standards",
+                details: [
+                  "Permit applications",
+                  "Regulatory liaison",
+                  "Compliance audits",
+                  "Legal documentation",
+                ],
               },
-              { 
-                title: "Climate Change Adaptation", 
-                icon: <FaGlobe/>,
-                description: "Climate resilience planning and adaptation strategies for sustainable development",
-                details: ["Climate risk assessment", "Adaptation planning", "Resilience strategies", "Mitigation measures"]
-              }
+              {
+                title: "Climate Change Adaptation",
+                icon: <FaGlobe />,
+                description:
+                  "Climate resilience planning and adaptation strategies for sustainable development",
+                details: [
+                  "Climate risk assessment",
+                  "Adaptation planning",
+                  "Resilience strategies",
+                  "Mitigation measures",
+                ],
+              },
             ].map((item, index) => (
               <FadeInSection key={index} delay={index * 0.1}>
                 <div className="bg-white/50 rounded-lg hover:bg-white/70 transition-all duration-300 p-6 h-full">
                   <div className="text-center mb-6">
                     <div className="text-4xl mb-4">{item.icon}</div>
                     <h3 className="text-xl font-medium mb-3">{item.title}</h3>
-                    <p className="text-sm text-black/70 mb-4 leading-relaxed">{item.description}</p>
+                    <p className="text-sm text-black/70 mb-4 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                  
+
                   <div className="space-y-2">
                     {item.details.map((detail, detailIndex) => (
-                      <div key={detailIndex} className="flex items-center text-sm text-black/60">
+                      <div
+                        key={detailIndex}
+                        className="flex items-center text-sm text-black/60"
+                      >
                         <div className="w-1.5 h-1.5 bg-green-900 rounded-full mr-3 flex-shrink-0"></div>
                         <span>{detail}</span>
                       </div>
@@ -228,7 +287,10 @@ export default function EnergyEnvironment() {
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-yellow-600/90">
-                    <Link href='/contact' className="text-xs text-green-900 hover:text-green-950 font-medium uppercase tracking-wider transition-colors duration-300">
+                    <Link
+                      href="/contact"
+                      className="text-xs text-green-900 hover:text-green-950 font-medium uppercase tracking-wider transition-colors duration-300"
+                    >
                       Learn More →
                     </Link>
                   </div>
@@ -239,27 +301,37 @@ export default function EnergyEnvironment() {
 
           {/* Energy Solutions */}
           <div className="mt-20 pt-16 border-t border-yellow-600/90">
-            <h3 className="text-3xl mb-8 text-center font-sentient">Sustainable Energy Solutions/</h3>
+            <h3 className="text-3xl mb-8 text-center font-sentient">
+              Sustainable Energy Solutions/
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <MdOutlineWbSunny className="text-5xl mx-auto mb-4 " />
                 <h4 className="text-xl font-medium mb-2">Solar Energy</h4>
-                <p className="text-sm text-black/70">Photovoltaic systems and solar thermal solutions</p>
+                <p className="text-sm text-black/70">
+                  Photovoltaic systems and solar thermal solutions
+                </p>
               </div>
               <div className="text-center">
                 <GiWindTurbine className="text-5xl mx-auto mb-4 " />
                 <h4 className="text-xl font-medium mb-2">Wind Power</h4>
-                <p className="text-sm text-black/70">Wind turbine installations and wind farm development</p>
+                <p className="text-sm text-black/70">
+                  Wind turbine installations and wind farm development
+                </p>
               </div>
               <div className="text-center">
                 <FaWater className="text-5xl mx-auto mb-4 " />
                 <h4 className="text-xl font-medium mb-2">Hydro Energy</h4>
-                <p className="text-sm text-black/70">Small-scale hydro and water-based energy systems</p>
+                <p className="text-sm text-black/70">
+                  Small-scale hydro and water-based energy systems
+                </p>
               </div>
               <div className="text-center">
                 <MdEnergySavingsLeaf className="text-5xl mx-auto mb-4 text-green-500" />
                 <h4 className="text-xl font-medium mb-2">Energy Efficiency</h4>
-                <p className="text-sm text-black/70">Energy audits and efficiency optimization solutions</p>
+                <p className="text-sm text-black/70">
+                  Energy audits and efficiency optimization solutions
+                </p>
               </div>
             </div>
           </div>
@@ -273,7 +345,9 @@ export default function EnergyEnvironment() {
               </div>
               <div>
                 <h4 className="text-3xl font-sentient mb-2">50MW</h4>
-                <p className="text-sm text-black/70">Renewable Energy Capacity</p>
+                <p className="text-sm text-black/70">
+                  Renewable Energy Capacity
+                </p>
               </div>
               <div>
                 <h4 className="text-3xl font-sentient mb-2">100%</h4>
@@ -339,7 +413,7 @@ export default function EnergyEnvironment() {
                 height={100}
                 width={100}
                 viewBox="0 0 80 80"
-                className="-rotate-90 text-white"
+                className="-rotate-90 text-white/90"
                 xmlSpace="preserve"
               >
                 <g>
@@ -361,38 +435,41 @@ export default function EnergyEnvironment() {
               </svg>
             </div>
 
-            <h3 className="text-3xl font-sentient mb-4">Environmental Leadership/</h3>
-            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
-              We are committed to environmental excellence, combining innovative technology 
-              with proven sustainable practices to deliver solutions that protect our planet 
-              while meeting the energy needs of today and tomorrow. Our approach ensures 
-              long-term environmental stewardship and regulatory compliance.
+            <h3 className="text-3xl font-sentient mb-4">
+              Environmental Leadership/
+            </h3>
+            <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
+              We are committed to environmental excellence, combining innovative
+              technology with proven sustainable practices to deliver solutions
+              that protect our planet while meeting the energy needs of today
+              and tomorrow. Our approach ensures long-term environmental
+              stewardship and regulatory compliance.
             </p>
-            
-            <div className="font-medium md:block hidden md:text-[5rem] tracking-wider text-white font-sentient whitespace-nowrap">
+
+            <div className="font-medium md:block hidden md:text-[5rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
               GREEN{" "}
               <span className="relative md:top-[100px] md:left-[-80px]">
                 FUTURE
               </span>
             </div>
           </div>
-          
+
           <div className="relative flex flex-col items-start justify-start lg:max-w-[50%]">
             <img
               src="https://cdn.pixabay.com/photo/2024/01/10/16/11/solar-8499901_1280.jpg"
               alt="Environmental Team"
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
-            
-            <div className="font-medium block md:hidden text-4xl lg:text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
-              GREEN{" "}
-              <span className="relative top-[50px]">
-                FUTURE
-              </span>
+
+            <div className="font-medium block md:hidden text-4xl lg:text-[3rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
+              GREEN <span className="relative top-[50px]">FUTURE</span>
             </div>
 
             <div className="w-full md:py-3 flex items-center md:justify-end">
-              <Link href='/our-team' className="border md:mt-[100px] mt-[80px] border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+              <Link
+                href="/our-team"
+                className="border md:mt-[100px] mt-[80px] border-white text-white/90 py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base"
+              >
                 Our Team &rarr;
               </Link>
             </div>
@@ -445,7 +522,10 @@ export default function EnergyEnvironment() {
               </div>
               <h1 className="text-end">Power Your Future</h1>
               <h1 className="md:text-[8rem] text-6xl text-end">CONTACT US</h1>
-              <Link href='/contact' className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <Link
+                href="/contact"
+                className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white/90 transition-all duration-500 ease-in-out"
+              >
                 <span>GET IN TOUCH</span> <ChevronRight strokeWidth={1} />
               </Link>
             </div>

@@ -7,9 +7,11 @@ const OurHero = () => {
   return (
     <div className="relative pt-[160px] md:pt-[80px] pb-[150px]">
       <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32 ">
-        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
-          <IoIosArrowBack className="text-white text-2xl" />
-         
+        <Link
+          href="/"
+          className="flex items-center bg-black/90  px-2 py-2 rounded-full"
+        >
+          <IoIosArrowBack className="text-white/90 text-2xl" />
         </Link>
       </div>
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center gap-10 md:gap-20">

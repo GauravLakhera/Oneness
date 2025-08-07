@@ -52,15 +52,19 @@ export default function About() {
     <div className="relative min-h-screen bg-white text-black/80 pt-32">
       {/* Hero Section */}
       <div className="absolute top-[7rem] lg:top-[10rem] left-5 lg:left-32 ">
-        <Link href="/" className="flex items-center bg-black/90  px-2 py-2 rounded-full">
-          <IoIosArrowBack className="text-white text-2xl" />
-         
+        <Link
+          href="/"
+          className="flex items-center bg-black/90  px-2 py-2 rounded-full"
+        >
+          <IoIosArrowBack className="text-white/90 text-2xl" />
         </Link>
       </div>
       <section className="py-8 lg:py-24 section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="page-hero">
-            <p className="lg:text-6xl text-4xl mb-12">Expertise/</p>
+            <p className="lg:text-6xl text-4xl mb-12 text-black/90">
+              Expertise/
+            </p>
             <div className="max-w-3xl ml-auto">
               <p className="text-3xl  font-sentient leading-relaxed  ">
                 We are engineers, innovators, and problem solvers united by a
@@ -206,7 +210,7 @@ export default function About() {
       </section>
 
       {/* What we do */}
-      <section className="pt-32 pb-10 lg:pb-3 section-padding bg-black/90 text-white/80">
+      <section className="pt-32 pb-10 lg:pb-3 section-padding bg-black/90 text-white/90">
         <div className="flex justify-between  flex-col-reverse lg:flex-row gap-6">
           <h1 className="text-3xl lg:w-8/12">
             We specialize in civil and electrical engineering services —
@@ -218,7 +222,7 @@ export default function About() {
           <h1 className="text-5xl">What we do/</h1>
         </div>
         <div className="flex flex-col justify-end items-end text-start mt-10">
-          <ul className="text-sm font-extralight text-white/80 space-y-2">
+          <ul className="text-sm font-extralight text-white/90 space-y-2">
             <li>
               <strong>Building & Construction</strong> - Preventive and
               corrective maintenance services
@@ -295,7 +299,7 @@ export default function About() {
                 height={100}
                 width={100}
                 viewBox="0 0 80 80"
-                className="-rotate-90 text-white"
+                className="-rotate-90 text-white/90"
                 xmlSpace="preserve"
               >
                 <g>
@@ -317,7 +321,7 @@ export default function About() {
               </svg>
             </div>
 
-            <p className="text-white/80 text-base md:max-w-xl leading-relaxed font-sentient">
+            <p className="text-white/90 text-base md:max-w-xl leading-relaxed font-sentient">
               Oneness is celebrating 8 years of serving India's construction and
               engineering industry. we have built a reputation for delivering
               sharp legal insight, commercial clarity and strategic depth across
@@ -325,7 +329,7 @@ export default function About() {
               its technical excellence, we’re proud to say–very few do what
               Kreisson does.
             </p>
-            <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white font-sentient whitespace-nowrap">
+            <div className="font-medium md:block hidden   md:text-[8rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
               EIGHT{" "}
               <span className="relative md:top-[150px] md:left-[-100px]">
                 YEARS
@@ -339,7 +343,7 @@ export default function About() {
               className="w-full max-w-md min-w-[20rem] object-cover border-0 mb-4 grayscale contrast-125"
             />
 
-            <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white font-sentient whitespace-nowrap">
+            <div className="font-medium block md:hidden   text-[3rem] tracking-wider text-white/90 font-sentient whitespace-nowrap">
               EIGHT{" "}
               <span className="relative top-[50px] md:left-[-100px]">
                 YEARS
@@ -347,7 +351,7 @@ export default function About() {
             </div>
 
             <div className="w-full  md:py-3 flex items-center md:justify-end">
-              <button className=" border md:mt-[185px] mt-[80px]  border-white text-white py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
+              <button className=" border md:mt-[185px] mt-[80px]  border-white text-white/90 py-3 px-8 rounded transition bg-transparent hover:bg-[#efe0b1] hover:text-[#33312f] text-base">
                 Our team &rarr;
               </button>
             </div>
@@ -416,8 +420,13 @@ export default function About() {
                 </svg>
               </div>
               <h1 className="text-end">Protect Your Project </h1>
-              <h1 className="md:text-[8rem] text-6xl text-end ">CONTACT US</h1>
-              <Link href='/contact' className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">
+              <h1 className="md:text-[8rem] text-6xl text-black/80 text-end ">
+                CONTACT US
+              </h1>
+              <Link
+                href="/contact"
+                className="border border-yellow-600/60 px-2 flex justify-center items-center text-sm py-2 hover:bg-black hover:text-white/90 transition-all duration-500 ease-in-out"
+              >
                 <span>GET IN TOUCH </span> <ChevronRight strokeWidth={1} />
               </Link>
             </div>
