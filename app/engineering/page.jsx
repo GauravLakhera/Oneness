@@ -284,7 +284,7 @@ export default function Engineering() {
                         key={detailIndex}
                         className="flex items-center text-sm text-black/60"
                       >
-                        <div className="w-1.5 h-1.5 bg-black/40 rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-black/50 rounded-full mr-3 flex-shrink-0"></div>
                         <span>{detail}</span>
                       </div>
                     ))}

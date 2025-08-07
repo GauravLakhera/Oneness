@@ -249,7 +249,7 @@ export default function InfrastructureProjects() {
                         key={detailIndex}
                         className="flex items-center text-sm text-black/60"
                       >
-                        <div className="w-1.5 h-1.5 bg-black/40 rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-black/50 rounded-full mr-3 flex-shrink-0"></div>
                         <span>{detail}</span>
                       </div>
                     ))}
@@ -425,7 +425,7 @@ export default function InfrastructureProjects() {
               our clients.
             </p>
             <p className="text-sm text-white/90/60">
-              Chief Executive Office/proprietor
+              Chief Executive Officer/Proprietor
             </p>
           </div>
 

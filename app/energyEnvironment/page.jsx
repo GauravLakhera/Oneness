@@ -280,7 +280,7 @@ export default function EnergyEnvironment() {
                         key={detailIndex}
                         className="flex items-center text-sm text-black/60"
                       >
-                        <div className="w-1.5 h-1.5 bg-green-900 rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-black/50 rounded-full mr-3 flex-shrink-0"></div>
                         <span>{detail}</span>
                       </div>
                     ))}
@@ -289,7 +289,7 @@ export default function EnergyEnvironment() {
                   <div className="mt-6 pt-4 border-t border-yellow-600/90">
                     <Link
                       href="/contact"
-                      className="text-xs text-green-900 hover:text-green-950 font-medium uppercase tracking-wider transition-colors duration-300"
+                      className="text-xs text-black/80 hover:text-black/90 font-medium uppercase tracking-wider transition-colors duration-300"
                     >
                       Learn More →
                     </Link>
@@ -402,7 +402,7 @@ export default function EnergyEnvironment() {
 
       {/* Sustainability Excellence Section */}
       <div className="bg-[#33312f]">
-        <section className="flex container mt-16 lg:w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+        <section className="flex container mt-16 lg:w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-white/90 justify-between items-start px-8 py-16 gap-8">
           <div className="flex flex-col gap-10 lg:max-w-[50%]">
             <div className="mb-2 lg:mb-8 text-[#efe0b1]">
               <svg

@@ -22,7 +22,7 @@ Vijay’s strategic approach and deep industry knowledge continue to drive value
       },
       {
         name: "Ajay Kumar P",
-        title: "Chief Executive Office/proprietor",
+        title: "Chief Executive Officer/Proprietor",
         image: "/images/ce.jpeg",
 
         description: ``,
