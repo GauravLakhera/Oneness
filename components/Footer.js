@@ -36,7 +36,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-[#656565] text-white/90 w-full pt-10 pb-6 px-6">
+    <footer className="bg-[#656565] text-white/90 w-full pt-10 pb-6">
       <div className="w-11/12 mx-auto">
         {/* Newsletter */}
         <div className="mb-10">
@@ -51,7 +51,7 @@ export default function Footer() {
               </h2>
             </div>
 
-            <div className="w-2/12">
+            <div className="lg:w-2/12 w-6/12">
               <img src="/images/logo.png"></img>
             </div>
           </div>

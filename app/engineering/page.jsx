@@ -402,7 +402,7 @@ export default function Engineering() {
 
       {/* Engineering Excellence Section */}
       <div className="bg-[#33312f]">
-        <section className="flex container mt-16 w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-[#efe0b1] justify-between items-start px-8 py-16 gap-8">
+        <section className="flex container mt-16 w-7xl mx-auto lg:mt-0 flex-col lg:flex-row min-h-screen text-white/90 justify-between items-start px-8 py-16 gap-8">
           <div className="flex flex-col gap-10 lg:max-w-[50%]">
             <div className="mb-2 lg:mb-8 text-[#efe0b1]">
               <svg

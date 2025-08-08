@@ -451,7 +451,7 @@ export default function InfrastructureProjects() {
                 alt="Infrastructure project"
               />
             </div>
-            <div className="absolute lg:relative right-0 top-5 flex flex-col items-end justify-center pr-16 space-y-3 lg:space-y-2">
+            <div className="absolute lg:relative right-0 top-5 flex flex-col items-end justify-center pr-5 lg:pr-16 space-y-3 lg:space-y-2">
               <div className="mb-8 text-[#efe0b1]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
